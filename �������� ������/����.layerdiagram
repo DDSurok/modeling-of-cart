@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="04361f65-a258-429d-b6dc-d95f9179b4c7" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="b43c5b6c-d655-4982-bb78-7d61e0be7e7c" name="Объекты отображения&#xD;&#xA;&#xD;&#xA;Фабрика телеги&#xD;&#xA;Колесо&#xD;&#xA;Телега">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c03350b4-f32f-49e7-a1b0-19b8a654a2c3" direction="Bidirectional">
+          <layerMoniker Id="5f21d5ad-fc36-4a96-9c3c-715e05ee9689" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="1e8d5385-2850-4fce-ab89-8628fa04ad98" name="Параметры отображения&#xD;&#xA;&#xD;&#xA;Размер колеса&#xD;&#xA;Цвет колеса&#xD;&#xA;Размер телеги&#xD;&#xA;Цвет телеги" />
+    <layer Id="5f21d5ad-fc36-4a96-9c3c-715e05ee9689" name="Фасад">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="dc6d7c46-3f90-443a-a1bd-2b3b26e8ee4a" direction="Forward">
+          <layerMoniker Id="1e8d5385-2850-4fce-ab89-8628fa04ad98" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="ba88c9b5-a24d-411c-85ee-2884bd95068f" name="Интерфейс">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="973c694c-668e-40db-8671-3e73f80b1311" direction="Forward">
+          <layerMoniker Id="5f21d5ad-fc36-4a96-9c3c-715e05ee9689" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>

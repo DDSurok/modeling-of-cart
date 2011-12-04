@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c8781d61-2a09-4280-9db3-d914085715c9}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>Движение телеги</Name>
+    <RootNamespace>Движение телеги</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="ModelDefinition\Package_0057.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0059.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Классы.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Классы.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Классы.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Движение телеги.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Слои.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Слои.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Слои.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Слои.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Слои.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Телега\Телега.csproj">
+      <Name>Телега</Name>
+      <Project>{769d4e95-497f-4809-a61d-2c0e84ad787f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

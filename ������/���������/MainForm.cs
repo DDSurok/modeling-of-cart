@@ -21,5 +21,12 @@ namespace Телега.Интерфейс
             this.colorDialog1.ShowDialog();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.panel1.Сдвинуть();
+        }
+
+        
+
     }
 }

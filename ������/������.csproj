@@ -42,13 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Графические объекты\Графический объект.cs" />
-    <Compile Include="Графические объекты\Квадратное колесо.cs" />
+    <Compile Include="Графические объекты\Квадрат.cs" />
     <Compile Include="Графические объекты\Линия.cs" />
+    <Compile Include="Графические объекты\Область построения.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Графические объекты\Параметры.cs" />
     <Compile Include="Графические объекты\Поверхность.cs" />
+    <Compile Include="Графические объекты\Колесо.cs" />
     <Compile Include="Графические объекты\Телега.cs" />
     <Compile Include="Графические объекты\Точка.cs" />
-    <Compile Include="Графические объекты\Фасад.cs" />
     <Compile Include="Интерфейс\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

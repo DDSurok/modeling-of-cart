@@ -13,13 +13,19 @@ namespace Телега.Графические_объекты
         }
         Точка Начало, Конец;
         Color Цвет;
-        public virtual override void Нарисовать(Color цвет)
+        public void Нарисовать(ref Graphics gr)
         {
-            
+            Pen pen = new Pen(this.Цвет);
+            gr.DrawLine(pen,
+                (float)(this.Начало.X),
+                (float)(Параметры.Высота_канвы - this.Начало.Y),
+                (float)(this.Конец.X),
+                (float)(Параметры.Высота_канвы - this.Конец.Y));
         }
-        public virtual override void Повернуть(double x, double y)
+        public void Повернуть(double x, double y)
         {
-            
+            this.Начало.Повернуть(x, y);
+            this.Конец.Повернуть(x, y);
         }
     }
 }

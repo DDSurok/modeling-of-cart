@@ -23,7 +23,10 @@ namespace Телега.Интерфейс
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.panel1.Сдвинуть();
+            for (int i = 0; i < 100; i++)
+            {
+                this.panel1.Сдвинуть();
+            }
         }
 
         

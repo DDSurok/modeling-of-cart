@@ -20,9 +20,9 @@ namespace Телега.Графические_объекты
             Pen pen = new Pen(this.Цвет);
             gr.DrawLine(pen,
                         (float)(this.Начало.X),
-                        (float)(this.Родитель.параметры.Высота_канвы - this.Начало.Y),
+                        (float)(this.Родитель.Height - this.Начало.Y),
                         (float)(this.Конец.X),
-                        (float)(this.Родитель.параметры.Высота_канвы - this.Конец.Y));
+                        (float)(this.Родитель.Height - this.Конец.Y));
         }
         public void Повернуть(double x, double y)
         {

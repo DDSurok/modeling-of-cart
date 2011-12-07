@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
   dslVersion="1.0.0.0"
   Id="2f69b99e-f164-4d0a-b6ad-bb75655ab8b3"
   name="Графические объекты" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -16,7 +16,7 @@
             Id="e65c5984-8475-4656-a334-4d9be6e5e1ac">
             <interfaceMoniker
               Id="5412d256-c6f1-45db-ba2c-0a57a81c8794"
-              LastKnownName="Графический элемент"
+              LastKnownName="Графический объект"
               LastKnownLocation="Package_0057.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -75,7 +75,7 @@
             Id="d03e9b2b-4488-47c9-a8bd-a7b7b5d8189f">
             <interfaceMoniker
               Id="5412d256-c6f1-45db-ba2c-0a57a81c8794"
-              LastKnownName="Графический элемент"
+              LastKnownName="Графический объект"
               LastKnownLocation="Package_0057.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -141,7 +141,7 @@
             Id="b238e91e-08ff-4b2d-a707-4523d3712c1b">
             <interfaceMoniker
               Id="5412d256-c6f1-45db-ba2c-0a57a81c8794"
-              LastKnownName="Графический элемент"
+              LastKnownName="Графический объект"
               LastKnownLocation="Package_0057.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -229,7 +229,7 @@
     <packageHasNamedElement>
       <Interface
         Id="5412d256-c6f1-45db-ba2c-0a57a81c8794"
-        name="Графический элемент"
+        name="Графический объект"
         isAbstract="false"
         isLeaf="false">
         <ownedAttributes>

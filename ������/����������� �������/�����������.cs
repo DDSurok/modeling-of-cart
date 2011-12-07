@@ -15,9 +15,9 @@ namespace Телега.Графические_объекты
         public double Значение_для_X(double x)
         {
             if (x <= 0)
-                return this.Родитель.параметры.Смещение_по_Y;
+                return this.Родитель.Смещение_по_Y;
             else
-                return Math.Sin(x / 100) * 3 * this.Родитель.параметры.Смещение_по_Y / 4 + this.Родитель.параметры.Смещение_по_Y;
+                return Math.Sin(x / 100) * 3 * this.Родитель.Смещение_по_Y / 4 + this.Родитель.Смещение_по_Y;
         }
         public void Повернуть(double x, double y)
         {
@@ -28,7 +28,7 @@ namespace Телега.Графические_объекты
         {
             Point[] line = new Point[2000];
             for (int x = 0; x<2000; x++)
-                line[x] = Point.Ceiling(new PointF((float)x, (float)(this.Родитель.параметры.Высота_канвы - this.Значение_для_X(x))));
+                line[x] = Point.Ceiling(new PointF((float)x, (float)(this.Родитель.Height - this.Значение_для_X(x))));
             gr.DrawLines(new Pen(this.Цвет), line);
         }
     }

@@ -13,26 +13,129 @@ namespace Телега.Интерфейс
         public MainForm()
         {
             InitializeComponent();
-            this.TextColorLeft.Text = this.panel1.параметры.Цвет_левого_колеса.ToString();
+            // Инициализация параметров в окне
+            // Параметры левого колеса
+            this.ColorLeft.BackColor = this.panel1.Цвет_левого_колеса;
+            this.TrackSizeLeft.Value = this.panel1.Размер_левого_колеса;
+            // Параметры правого колеса
+            this.ColorRight.BackColor = this.panel1.Цвет_правого_колеса;
+            this.TrackSizeRight.Value = this.panel1.Размер_правого_колеса;
+            // Параметры телеги
+            this.ColorCart.BackColor = this.panel1.Цвет_телеги;
+            this.TrackLenghtCart.Value = this.panel1.Длина_телеги;
+            // Скорость движения
+            this.TrackSpeed.Value = this.panel1.Скорость_движения;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void SelectLeftColor_Click(object sender, EventArgs e)
         {
-            this.colorDialog1.Color = this.panel1.параметры.Цвет_левого_колеса;
+            this.colorDialog1.Color = this.panel1.Цвет_левого_колеса;
             this.colorDialog1.ShowDialog();
-            this.TextColorLeft.Text = this.colorDialog1.Color.ToString();
-            this.panel1.параметры.Цвет_левого_колеса = this.colorDialog1.Color;
+            this.ColorLeft.BackColor = this.colorDialog1.Color;
+            this.panel1.Цвет_левого_колеса = this.colorDialog1.Color;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSelectRightColor_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 100; i++)
-            {
-                this.panel1.Сдвинуть();
-            }
+            this.colorDialog1.Color = this.panel1.Цвет_правого_колеса;
+            this.colorDialog1.ShowDialog();
+            this.ColorRight.BackColor = this.colorDialog1.Color;
+            this.panel1.Цвет_правого_колеса = this.colorDialog1.Color;
         }
 
-        
+        private void TrackSizeLeft_ValueChanged(object sender, EventArgs e)
+        {
+            this.TextSizeLeft.Value = this.TrackSizeLeft.Value;
+            this.panel1.Размер_левого_колеса = this.TrackSizeLeft.Value;
+        }
+
+        private void TrackSizeRight_ValueChanged(object sender, EventArgs e)
+        {
+            this.TextSizeRight.Value = this.TrackSizeRight.Value;
+            this.panel1.Размер_правого_колеса = this.TrackSizeRight.Value;
+        }
+
+        private void TextSizeLeft_ValueChanged(object sender, EventArgs e)
+        {
+            this.TrackSizeLeft.Value = (int)this.TextSizeLeft.Value;
+            this.panel1.Размер_левого_колеса = this.TrackSizeLeft.Value;
+        }
+
+        private void TextSizeRight_ValueChanged(object sender, EventArgs e)
+        {
+            this.TrackSizeRight.Value = (int)this.TextSizeRight.Value;
+            this.panel1.Размер_правого_колеса = this.TrackSizeRight.Value;
+        }
+
+        private void TextLenghtCart_ValueChanged(object sender, EventArgs e)
+        {
+            this.TrackLenghtCart.Value = (int)this.TextLenghtCart.Value;
+            this.panel1.Длина_телеги = this.TrackLenghtCart.Value;
+        }
+
+        private void TrackLenghtCart_ValueChanged(object sender, EventArgs e)
+        {
+            this.TextLenghtCart.Value = this.TrackLenghtCart.Value;
+            this.panel1.Длина_телеги = this.TrackLenghtCart.Value;
+        }
+
+        private void TextSpeed_ValueChanged(object sender, EventArgs e)
+        {
+            this.TrackSpeed.Value = (int)this.TextSpeed.Value;
+            this.panel1.Скорость_движения = this.TrackSpeed.Value;
+        }
+
+        private void TrackSpeed_ValueChanged(object sender, EventArgs e)
+        {
+            this.TextSpeed.Value = this.TrackSpeed.Value;
+            this.panel1.Скорость_движения = this.TrackSpeed.Value;
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            this.panel1.Сдвинуть();
+            this.timer.Enabled = true;
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            this.timer.Enabled = true;
+            this.btnSelectLeftColor.Enabled = false;
+            this.btnSelectRightColor.Enabled = false;
+            this.btnSelectCartColor.Enabled = false;
+            this.TrackSizeLeft.Enabled = false;
+            this.TrackSizeRight.Enabled = false;
+            this.TrackLenghtCart.Enabled = false;
+            this.TrackSpeed.Enabled = false;
+            this.TextSizeLeft.Enabled = false;
+            this.TextSizeRight.Enabled = false;
+            this.TextLenghtCart.Enabled = false;
+            this.TextSpeed.Enabled = false;
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            this.btnSelectLeftColor.Enabled = true;
+            this.btnSelectRightColor.Enabled = true;
+            this.btnSelectCartColor.Enabled = true;
+            this.TrackSizeLeft.Enabled = true;
+            this.TrackSizeRight.Enabled = true;
+            this.TrackLenghtCart.Enabled = true;
+            this.TrackSpeed.Enabled = true;
+            this.TextSizeLeft.Enabled = true;
+            this.TextSizeRight.Enabled = true;
+            this.TextLenghtCart.Enabled = true;
+            this.TextSpeed.Enabled = true;
+            this.panel1.Сбросить_движение();
+            this.timer.Enabled = false;
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            this.TrackSpeed.Enabled = true;
+            this.TextSpeed.Enabled = true;
+            this.timer.Enabled = false;
+        }
 
     }
 }

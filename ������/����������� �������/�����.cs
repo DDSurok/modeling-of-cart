@@ -17,8 +17,8 @@ namespace Телега.Графические_объекты
         }
         public virtual void Повернуть(double x, double y)
         {
-            double tempx = (this.X - x) * Math.Cos(this.Родитель.параметры.Приращение_угла) - (this.Y - y) * Math.Sin(this.Родитель.параметры.Приращение_угла) + x;
-            double tempy = (this.X - x) * Math.Sin(this.Родитель.параметры.Приращение_угла) + (this.Y - y) * Math.Cos(this.Родитель.параметры.Приращение_угла) + y;
+            double tempx = (this.X - x) * Math.Cos(this.Родитель.Приращение_угла) - (this.Y - y) * Math.Sin(this.Родитель.Приращение_угла) + x;
+            double tempy = (this.X - x) * Math.Sin(this.Родитель.Приращение_угла) + (this.Y - y) * Math.Cos(this.Родитель.Приращение_угла) + y;
             this.X = tempx;
             this.Y = tempy;
         }

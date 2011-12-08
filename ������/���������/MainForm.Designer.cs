@@ -362,12 +362,12 @@
             // 
             this.TextSpeed.Location = new System.Drawing.Point(631, 34);
             this.TextSpeed.Maximum = new decimal(new int[] {
-            15,
+            120,
             0,
             0,
             0});
             this.TextSpeed.Minimum = new decimal(new int[] {
-            1,
+            10,
             0,
             0,
             0});
@@ -375,7 +375,7 @@
             this.TextSpeed.Size = new System.Drawing.Size(51, 20);
             this.TextSpeed.TabIndex = 13;
             this.TextSpeed.Value = new decimal(new int[] {
-            1,
+            10,
             0,
             0,
             0});
@@ -393,13 +393,14 @@
             // TrackSpeed
             // 
             this.TrackSpeed.Location = new System.Drawing.Point(693, 15);
-            this.TrackSpeed.Maximum = 15;
-            this.TrackSpeed.Minimum = 1;
+            this.TrackSpeed.Maximum = 120;
+            this.TrackSpeed.Minimum = 10;
             this.TrackSpeed.Name = "TrackSpeed";
             this.TrackSpeed.Size = new System.Drawing.Size(126, 45);
             this.TrackSpeed.TabIndex = 15;
+            this.TrackSpeed.TickFrequency = 10;
             this.TrackSpeed.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.TrackSpeed.Value = 1;
+            this.TrackSpeed.Value = 10;
             this.TrackSpeed.ValueChanged += new System.EventHandler(this.TrackSpeed_ValueChanged);
             // 
             // timer
@@ -424,10 +425,10 @@
             this.panel1.Size = new System.Drawing.Size(807, 428);
             this.panel1.TabIndex = 5;
             this.panel1.Высота_телеги = 50;
-            this.panel1.Длина_телеги = 100;
-            this.panel1.Размер_левого_колеса = 25;
-            this.panel1.Размер_правого_колеса = 50;
-            this.panel1.Скорость_движения = 1;
+            this.panel1.Длина_телеги = 300;
+            this.panel1.Размер_левого_колеса = 200;
+            this.panel1.Размер_правого_колеса = 200;
+            this.panel1.Скорость_движения = 60;
             this.panel1.Цвет_левого_колеса = System.Drawing.Color.Red;
             this.panel1.Цвет_правого_колеса = System.Drawing.Color.Red;
             this.panel1.Цвет_телеги = System.Drawing.Color.Green;

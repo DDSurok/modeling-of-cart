@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.btnSelectRightColor = new System.Windows.Forms.Button();
@@ -72,18 +72,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.TrackSpeed)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnStart
             // 
-            this.button1.Location = new System.Drawing.Point(12, 552);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Старт";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnStart_Click);
+            this.btnStart.Location = new System.Drawing.Point(12, 552);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Text = "Старт";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnStop
             // 
+            this.btnStop.Enabled = false;
             this.btnStop.Location = new System.Drawing.Point(174, 553);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 23);
@@ -158,7 +159,7 @@
             0,
             0});
             this.TextSizeLeft.Minimum = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
@@ -166,7 +167,7 @@
             this.TextSizeLeft.Size = new System.Drawing.Size(54, 20);
             this.TextSizeLeft.TabIndex = 14;
             this.TextSizeLeft.Value = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
@@ -232,7 +233,7 @@
             0,
             0});
             this.TextSizeRight.Minimum = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
@@ -240,7 +241,7 @@
             this.TextSizeRight.Size = new System.Drawing.Size(49, 20);
             this.TextSizeRight.TabIndex = 14;
             this.TextSizeRight.Value = new decimal(new int[] {
-            1,
+            20,
             0,
             0,
             0});
@@ -357,17 +358,18 @@
             this.btnSelectCartColor.TabIndex = 17;
             this.btnSelectCartColor.Text = "...";
             this.btnSelectCartColor.UseVisualStyleBackColor = true;
+            this.btnSelectCartColor.Click += new System.EventHandler(this.btnSelectCartColor_Click);
             // 
             // TextSpeed
             // 
             this.TextSpeed.Location = new System.Drawing.Point(631, 34);
             this.TextSpeed.Maximum = new decimal(new int[] {
-            120,
+            10,
             0,
             0,
             0});
             this.TextSpeed.Minimum = new decimal(new int[] {
-            10,
+            1,
             0,
             0,
             0});
@@ -375,7 +377,7 @@
             this.TextSpeed.Size = new System.Drawing.Size(51, 20);
             this.TextSpeed.TabIndex = 13;
             this.TextSpeed.Value = new decimal(new int[] {
-            10,
+            5,
             0,
             0,
             0});
@@ -393,23 +395,22 @@
             // TrackSpeed
             // 
             this.TrackSpeed.Location = new System.Drawing.Point(693, 15);
-            this.TrackSpeed.Maximum = 120;
-            this.TrackSpeed.Minimum = 10;
+            this.TrackSpeed.Minimum = 1;
             this.TrackSpeed.Name = "TrackSpeed";
             this.TrackSpeed.Size = new System.Drawing.Size(126, 45);
             this.TrackSpeed.TabIndex = 15;
-            this.TrackSpeed.TickFrequency = 10;
             this.TrackSpeed.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.TrackSpeed.Value = 10;
+            this.TrackSpeed.Value = 5;
             this.TrackSpeed.ValueChanged += new System.EventHandler(this.TrackSpeed_ValueChanged);
             // 
             // timer
             // 
-            this.timer.Interval = 250;
+            this.timer.Interval = 42;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // btnPause
             // 
+            this.btnPause.Enabled = false;
             this.btnPause.Location = new System.Drawing.Point(93, 553);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(75, 23);
@@ -428,7 +429,7 @@
             this.panel1.Длина_телеги = 300;
             this.panel1.Размер_левого_колеса = 200;
             this.panel1.Размер_правого_колеса = 200;
-            this.panel1.Скорость_движения = 60;
+            this.panel1.Скорость_движения = 5;
             this.panel1.Цвет_левого_колеса = System.Drawing.Color.Red;
             this.panel1.Цвет_правого_колеса = System.Drawing.Color.Red;
             this.panel1.Цвет_телеги = System.Drawing.Color.Green;
@@ -447,7 +448,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnStop);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStart);
             this.Name = "MainForm";
             this.Text = "Моделирование движения телеги с квадратными колесами";
             ((System.ComponentModel.ISupportInitialize)(this.TrackSizeLeft)).EndInit();
@@ -471,7 +472,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private Графические_объекты.Область_построения panel1;

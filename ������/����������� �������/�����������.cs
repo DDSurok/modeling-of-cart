@@ -9,7 +9,11 @@ namespace Телега.Графические_объекты
         {
             this.Цвет = цвет;
             this.Родитель = родитель;
+            Random rand = new Random();
+            Коэф1 = rand.Next(20, 150);
+            Коэф2 = rand.Next(20, 150);
         }
+        private int Коэф1, Коэф2;
         public Color Цвет { get; set; }
         private Область_построения Родитель;
         public double Значение_для_X(double x)
@@ -17,7 +21,9 @@ namespace Телега.Графические_объекты
             if (x <= 0)
                 return this.Родитель.Смещение_по_Y;
             else
-                return Math.Sin(x / 100) * 3 * this.Родитель.Смещение_по_Y / 4 + this.Родитель.Смещение_по_Y;
+                return Math.Sin(x / this.Коэф1) * 1.5 * this.Родитель.Смещение_по_Y / 4
+                    + Math.Sin(x / this.Коэф2) * 1.5 * this.Родитель.Смещение_по_Y / 4
+                    + this.Родитель.Смещение_по_Y;
         }
         public void Повернуть(double x, double y)
         {

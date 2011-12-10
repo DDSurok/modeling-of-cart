@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Движение телеги", "Движение телеги\Движение телеги.modelproj", "{C8781D61-2A09-4280-9DB3-D914085715C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Телега", "Телега\Телега.csproj", "{769D4E95-497F-4809-A61D-2C0E84AD787F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Телега(ООП)", "Телега\Телега(ООП).csproj", "{769D4E95-497F-4809-A61D-2C0E84AD787F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

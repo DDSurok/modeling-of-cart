@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="edd83bb0-5dce-41d5-b3d3-0b035bebb3fc"
   name="Движение телеги" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -29,6 +29,276 @@
         Id="159d81f0-3392-4062-ab6b-60c7816ab3d3"
         LastKnownName="Интерфейс"
         LastKnownLocation="Package_0059.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+        name="Точка" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="941db4b8-ae72-4b03-a12b-14b5b96a30cd"
+        name="List&lt;Линия&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3a2a177c-3905-4553-bbfb-46e6098aad2a"
+        name="List&lt;Точка&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f3a50823-4069-428d-8bea-6e7b353a68e6"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="82fdf6d8-7b18-4012-bc71-d497147da5ba"
+        name="Телега"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b649c249-665e-4c4a-a46c-18cb778368b6">
+            <interfaceMoniker
+              Id="5412d256-c6f1-45db-ba2c-0a57a81c8794"
+              LastKnownName="Графический объект"
+              LastKnownLocation="Package_0057.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c039cd7a-1151-49fa-b580-415ec853e79f"
+            name="Цвет"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="da5463bc-9565-4cd0-867d-345946e56d68"
+            name="Левая ось"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                LastKnownName="Точка"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="824d94e3-df3a-4ec1-854a-1bae8cf5934d"
+            name="Правая ось"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                LastKnownName="Точка"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4b73c795-7e8c-45a1-9e82-35e839773dbf"
+            name="Родитель"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b"
+                LastKnownName="Область построения"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="53fefadc-3ba6-474c-8d72-b761866d9ac1"
+            name="Нарисовать"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="900a7d78-2ad4-45c8-a0f9-160f084a51e9"
+            name="Повернуть"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24ff53e8-a2f8-4c61-a11b-d14a24a9db07"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d5d0ac31-e3e1-4fef-acae-754459af6add"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5d8f7552-e76c-46b6-9069-a8a9326b6e3a"
+            name="Обновить положение"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0f0f7992-2522-478e-85f3-c4298ecac719"
+                  name="Левая ось"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                      LastKnownName="Точка"
+                      LastKnownLocation="Движение телеги.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df93073d-1a52-4b77-a19e-34f4057e5fe1"
+                  name="Правая ось"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                      LastKnownName="Точка"
+                      LastKnownLocation="Движение телеги.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="85a9c21a-78e9-488f-bdeb-d2667fc1f52f"
+            name="Ресчет вершин"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f37ebec4-e09f-477e-8c2d-788bee7be41f"
+                  name="x1v"
+                  direction="Out"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="61241146-0aac-4c6b-82fa-34c22b747f3c"
+                  name="y1v"
+                  direction="Out"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67be6716-bd3b-4943-a1c3-385a00b9bee5"
+                  name="x2v"
+                  direction="Out"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8f2abee4-3dcf-44d4-9569-99f1a437e492"
+                  name="y2v"
+                  direction="Out"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="78d5201d-377f-4521-95f6-f5fb2d9951bf"
+        name="Параметры" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="45386a8a-2c05-4e6b-a55f-55148bfdc553"
+        name="Поверхность" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="33d0f148-eff8-44ec-b0ce-e3b98827e9a1"
+        name="Колесо" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6a68c6e4-8366-4ff7-bee6-50385c11411c"
+        name="Panel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -1,21 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="efdbd039-3f4e-4af6-9439-121329af518e" name="Классы " linkedPackageId="6c817deb-416d-492e-b051-fd642c616ac6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="efdbd039-3f4e-4af6-9439-121329af518e" name="Классы " linkedPackageId="6c817deb-416d-492e-b051-fd642c616ac6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
-    <packageHasNamedElement>
-      <referencedType Id="da3410db-d43b-41d8-9a7a-67fa3535bf38" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="17a35cb8-9588-466a-8fe1-f4d3140a4b24" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="912514d7-7ded-49af-be03-884b7cc9adec" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="34c9e669-d20d-4191-9ad6-ce388d06529f" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
@@ -26,193 +11,983 @@
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
-    <logicalClassDesignerModelHasPackages>
-      <package Id="6621aec1-2e6a-4d20-a93b-fd3d543e518c" name="Графические объекты">
-        <elementDefinition Id="2f69b99e-f164-4d0a-b6ad-bb75655ab8b3" />
-        <packagedElements>
-          <packageHasNamedElement>
-            <class Id="8bfa96b9-7088-4ff7-85b6-22da98d6f70b" name="Квадратное колесо" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="7ab7e0a2-25d4-49c8-b3ba-62abcc7ad865" />
-              <suppliersInternal>
-                <interfaceRealization Id="c2a28864-3e95-481c-897d-17aa5c468786">
-                  <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический элемент" />
-                  <elementDefinition Id="e65c5984-8475-4656-a334-4d9be6e5e1ac" />
-                </interfaceRealization>
-              </suppliersInternal>
-              <ownedAttributesInternal>
-                <property Id="24adbb98-fffe-4389-a51c-a5dfac7c2299" name="Размер" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="0558d0d4-ce5b-49b3-8adf-8d76a0aac998" />
+    <packageHasNamedElement>
+      <referencedType Id="4db08b40-af6c-435c-b76a-2934a963d6f5" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="33e51dac-130d-456c-9c92-6d02ee6c94a7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" name="Color" isAbstract="false" isLeaf="false" cachedFullName="Color">
+        <elementDefinition Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7c7a4c64-0323-497d-b4dd-5bd7528e3f0f" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="53bd30cd-dda6-4dfb-b158-91792307ff93" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5e74387c-df1c-4c41-92fd-89e0193f2261" name="Точка" isAbstract="false" isLeaf="false" cachedFullName="Движение телеги::Графические объекты::Точка">
+        <elementDefinition Id="0a71eecb-ea78-4f7c-b122-045db85512f7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" name="Графический объект" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5412d256-c6f1-45db-ba2c-0a57a81c8794" />
+        <ownedAttributes>
+          <property Id="8d2e36e3-d420-4435-9947-5013dea45a42" name="Цвет" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84493958-e2c9-470e-aa1e-83ee13e6c634" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="ae5fb009-8cfc-4aa5-967f-c53f26e3f5e0" name="Нарисовать" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="86be224e-91f2-496b-b9ed-a47049053b18" />
+          </operation>
+          <operation Id="f7699e63-f17d-4165-ac79-cb6f19244cdc" name="Повернуть" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bbd2ec07-3549-47bd-b3ae-5a8e9607d3e3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="03bd4af1-5e22-4a3a-961f-4c5cf800c802" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="955a08f4-f841-4c39-a635-a51c46ce8f2d" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="da3410db-d43b-41d8-9a7a-67fa3535bf38" LastKnownName="Integer" />
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
                   </type_NamedElement>
-                </property>
-                <property Id="fee0578c-26e4-49a8-be27-c44782d142e4" name="Цвет" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="0cb75e1b-8117-4f18-95e0-72b12e32561d" />
-                </property>
-              </ownedAttributesInternal>
-              <ownedOperationsInternal>
-                <operation Id="7d67ca00-167c-4335-9cf5-53ac191a3023" name="Перерисовать" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="143c04ae-2386-4575-b51b-cc82ac314eaa" />
-                </operation>
-              </ownedOperationsInternal>
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="94c766a3-a3ac-41c6-baf6-1c7f5d9f7fe8" name="Телега" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="eb7b5879-8fb0-40d2-b33f-93654b9a6164" />
-              <suppliersInternal>
-                <interfaceRealization Id="32701283-73fb-4572-ba3f-04c32d0b6691">
-                  <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический элемент" />
-                  <elementDefinition Id="d03e9b2b-4488-47c9-a8bd-a7b7b5d8189f" />
-                </interfaceRealization>
-              </suppliersInternal>
-              <ownedAttributesInternal>
-                <property Id="aa9158d9-a75f-423c-9017-12d08ff96dd2" name="Высота" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="30420e14-0be3-4ee0-bb25-1dc51351b248" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f7a49b18-d35e-4b52-bf0c-c726a4975bbf" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="38428abb-37de-4986-87a0-ed909b465bf5" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="912514d7-7ded-49af-be03-884b7cc9adec" LastKnownName="Integer" />
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
                   </type_NamedElement>
-                </property>
-                <property Id="cf6464f7-980a-44e2-9972-965f4f7ea56c" name="Длина" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="8f518387-cc4a-4d50-bf7e-28bb44096638" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="15a5b238-12cb-405a-a7c7-1a95bcec9b1d" name="Параметры" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bbea7a07-a7af-49d0-807d-5c4078f262dd" />
+        <ownedAttributesInternal>
+          <property Id="612b24e9-d5e1-40f4-9c0e-f7e7e44c31d7" name="Размер правого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c0b6e2b7-ec22-47d8-9a59-9418ac245fff" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="34c9e669-d20d-4191-9ad6-ce388d06529f" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="3ed01e01-3e3e-451e-963e-96aa8a83e03e" name="Размер левого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="273ee72b-ee92-4b55-9074-a9fe0fe7f91f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="110bedf8-46bf-4f1f-ad91-0b227013886b" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="08826e13-0a33-4bca-ac36-b92fac3e94ef" name="Высота телеги" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5cce2b06-7c91-446b-8ac4-971f2bde5c2e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7c7a4c64-0323-497d-b4dd-5bd7528e3f0f" LastKnownName="integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="b15db4ca-a7b5-444d-95d3-6e4886d07362" name="Длина телеги" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61133846-5161-4420-acaa-7d337aaac539" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7c7a4c64-0323-497d-b4dd-5bd7528e3f0f" LastKnownName="integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="6b54cab0-f98f-4f11-8be2-17d876403548" name="Цвет левого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8992f98a-4c4b-40a4-b6fc-ce7c8b130848" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="13b107be-9e08-4057-b60f-d6b91b290892" name="Цвет правого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9deb863a-49e7-4297-9fe2-b12fde392eb3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="c3592939-3460-48dd-b884-b053909501d4" name="Цвет телеги" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c641645-d605-4d4e-9539-8849e11fc017" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="dd828bce-4675-4df2-86a5-77a8044f0436" name="Скорость движения" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98f45b2d-1a98-49c5-be46-75fb1ce4c1d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="bca1bf9a-b6a6-4d23-ba20-6f003cb6a5dd" name="Смещение по оси Y" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6a216f6c-9d20-40fa-8d31-56658827c372" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8f77bf9d-8a31-4a89-8167-6115974d6e0b" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="8d18afc7-5ef6-49ec-9e9c-0e7fc682e4bb" name="Точка" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0a71eecb-ea78-4f7c-b122-045db85512f7" />
+        <suppliersInternal>
+          <interfaceRealization Id="f2931bae-4480-49ad-a9fb-e68ca155463b">
+            <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический объект" />
+            <elementDefinition Id="25a3494b-bdc6-4b26-aa71-1a2072f0a9f6" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="43197bbc-2111-434c-9efc-3be614075fd2" name="X" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e1a3bb20-bd56-4282-997c-77c1ee8991cc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="6d12313a-cd29-4b28-9b61-2cea5be1c888" name="Y" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8cdcdc07-8b09-4cec-9e89-56fd5396dbed" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="233bfebe-a6ce-43b1-8eb5-99a99d0da2da" name="Цвет" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="53b4ab6c-89dc-4885-8c3d-ef1dbe09cd4f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="eaa1b525-5989-4c95-8d7b-00b4f11a200d" name="Родитель" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33c0a13a-e276-4a7c-87a5-1c0e6fd47504" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1c60ab96-a875-4f06-be57-bf4ece1f4d13" LastKnownName="Область построения" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0707dcd2-726e-4999-910e-5a6ee1b1cf90" name="Нарисовать" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="be50c8f1-bc28-46af-9a97-f401d2534c47" />
+          </operation>
+          <operation Id="f253eed8-c5b4-46c5-853a-6335baab477b" name="Повернуть" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b42c2278-2e0c-4e82-b7c7-d85927f12d4b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="acfed0e0-e484-4090-af14-2b1c1c3f46b7" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="c1105e6c-bc19-4f1c-8ed4-b09a569f85bc" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="17a35cb8-9588-466a-8fe1-f4d3140a4b24" LastKnownName="Integer" />
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
                   </type_NamedElement>
-                </property>
-              </ownedAttributesInternal>
-              <ownedOperationsInternal>
-                <operation Id="72226e2b-9739-4d85-9255-c81d39f70e34" name="Перерисовать" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="712b9f9b-2185-4322-b0db-e8f784b4e8eb" />
-                </operation>
-              </ownedOperationsInternal>
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="b2fc7e85-f0c2-4813-84be-6cc72777bbbc" name="Местность" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="637469db-0983-40f1-adc4-78b45dfe7f6f" />
-              <suppliersInternal>
-                <interfaceRealization Id="90835095-1669-42b5-8493-2d97b220b793">
-                  <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический элемент" />
-                  <elementDefinition Id="b238e91e-08ff-4b2d-a707-4523d3712c1b" />
-                </interfaceRealization>
-              </suppliersInternal>
-              <ownedOperationsInternal>
-                <operation Id="22ffd38d-f010-42ef-886c-d050eee2e1a4" name="Перерисовать" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="c8b4f1f4-ff66-402f-99a3-7c6c7acb2c10" />
-                </operation>
-              </ownedOperationsInternal>
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="15a5b238-12cb-405a-a7c7-1a95bcec9b1d" name="Параметры" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="bbea7a07-a7af-49d0-807d-5c4078f262dd" />
-              <ownedAttributesInternal>
-                <property Id="612b24e9-d5e1-40f4-9c0e-f7e7e44c31d7" name="Размер правого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="c0b6e2b7-ec22-47d8-9a59-9418ac245fff" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8fc73f04-623c-4891-8e9c-6132d0443101" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="d8bcf1b9-5c29-4465-85d9-0d149c99662f" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="34c9e669-d20d-4191-9ad6-ce388d06529f" LastKnownName="Integer" />
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
                   </type_NamedElement>
-                </property>
-                <property Id="3ed01e01-3e3e-451e-963e-96aa8a83e03e" name="Размер левого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="273ee72b-ee92-4b55-9074-a9fe0fe7f91f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f5f5b9d1-0b23-4920-87f9-cb350c20528b" name="Расстояние между двумя точками" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d99c79b7-3bd4-4692-b17a-6e90ae348f15" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cd35b6ae-03ef-4739-bec3-c18b335c3868" name="точка1" direction="In" isUnique="false">
+                  <elementDefinition Id="6efb3d82-3505-49e9-bd6d-183a9663083a" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="110bedf8-46bf-4f1f-ad91-0b227013886b" LastKnownName="Integer" />
+                    <referencedTypeMoniker Id="5e74387c-df1c-4c41-92fd-89e0193f2261" LastKnownName="Точка" />
                   </type_NamedElement>
-                </property>
-                <property Id="08826e13-0a33-4bca-ac36-b92fac3e94ef" name="Высота телеги" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="5cce2b06-7c91-446b-8ac4-971f2bde5c2e" />
-                </property>
-                <property Id="b15db4ca-a7b5-444d-95d3-6e4886d07362" name="Длина телеги" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="61133846-5161-4420-acaa-7d337aaac539" />
-                </property>
-              </ownedAttributesInternal>
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <Interface Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" name="Графический элемент" isAbstract="false" isLeaf="false">
-              <elementDefinition Id="5412d256-c6f1-45db-ba2c-0a57a81c8794" />
-              <ownedAttributes>
-                <property Id="dddc770c-7dae-45f0-923d-817b690401df" name="Координаты положения" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="88c3645c-dffa-4184-8cef-909dbacfb5df" />
-                </property>
-                <property Id="8d2e36e3-d420-4435-9947-5013dea45a42" name="Палитра" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="84493958-e2c9-470e-aa1e-83ee13e6c634" />
-                </property>
-              </ownedAttributes>
-              <ownedOperations>
-                <operation Id="ae5fb009-8cfc-4aa5-967f-c53f26e3f5e0" name="Перерисовать" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="86be224e-91f2-496b-b9ed-a47049053b18" />
-                </operation>
-              </ownedOperations>
-            </Interface>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="9e91d6df-fd71-4d3a-982d-e343643662ef" name="Фасад" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="621161f2-3054-48e3-b56a-bdce157bd35a" />
-              <ownedOperationsInternal>
-                <operation Id="dde3a325-a278-48c2-8a7f-43a6245fdf06" name="Установить расмер правого колеса" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="a0452ea2-5ba2-4233-bb35-6c6e50fa9a0b" />
-                  <ownedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="5778c64b-4f7c-41dd-955b-9413db0654ad" name="Размер" direction="In" isUnique="false">
-                        <elementDefinition Id="8c45fbd0-18bf-4640-b655-38d74f65b49d" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="da3410db-d43b-41d8-9a7a-67fa3535bf38" LastKnownName="Integer" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                  </ownedParameters>
-                </operation>
-                <operation Id="d6a3c24e-f31b-4f60-895a-b70e49edc693" name="Установить размер левого колеса" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="0f432aeb-f53c-4978-9775-e01f54a63159" />
-                  <ownedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="34852c7a-3a9c-4331-8fea-fe0c2dacbdeb" name="Размер" direction="In" isUnique="false">
-                        <elementDefinition Id="19373316-0af1-4492-81ab-8a7562498635" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="da3410db-d43b-41d8-9a7a-67fa3535bf38" LastKnownName="Integer" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                  </ownedParameters>
-                </operation>
-                <operation Id="87820875-6011-41c8-b97a-90bd8c6116a0" name="Установить длину телеги" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="4f66c467-7015-4bbb-a8d6-323dcd9073e6" />
-                  <ownedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="66d94974-00a4-47f8-b222-47ef13c8d590" name="Размер" direction="In" isUnique="false">
-                        <elementDefinition Id="94f60734-0e6e-48cb-a207-e192c079e100" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="da3410db-d43b-41d8-9a7a-67fa3535bf38" LastKnownName="Integer" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                  </ownedParameters>
-                </operation>
-                <operation Id="3fe387e1-058e-41ef-9a27-9c9082bc9427" name="Установить высоту телеги" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="9011f765-becd-4cbb-ac3e-0b19f9551a42" />
-                  <ownedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="13200c64-5473-4a90-92b0-dba08bdc689a" name="Размер" direction="In" isUnique="false">
-                        <elementDefinition Id="c15fe205-144d-4a03-9943-d9fb75878c06" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="da3410db-d43b-41d8-9a7a-67fa3535bf38" LastKnownName="Integer" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                  </ownedParameters>
-                </operation>
-              </ownedOperationsInternal>
-            </class>
-          </packageHasNamedElement>
-        </packagedElements>
-      </package>
-    </logicalClassDesignerModelHasPackages>
-    <logicalClassDesignerModelHasPackages>
-      <package Id="ee669045-bc0d-4500-8dba-71da6d1f76bb" name="Интерфейс">
-        <elementDefinition Id="159d81f0-3392-4062-ab6b-60c7816ab3d3" />
-      </package>
-    </logicalClassDesignerModelHasPackages>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="72799ff4-81d1-495b-b751-c97840a0f653" name="точка2" direction="In" isUnique="false">
+                  <elementDefinition Id="9a1b7541-b9b4-4452-afb3-ea827ae2c463" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5e74387c-df1c-4c41-92fd-89e0193f2261" LastKnownName="Точка" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="36da89ae-8652-4efe-ad59-37b2a23c23f6" direction="Return" isUnique="false">
+                  <elementDefinition Id="00b59571-4882-4dbf-ad18-d29291e2994e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="71529df5-a101-459f-9918-11a67d970907" name="Квадрат" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8e230da5-a6b1-48a4-a07e-b0d5b7f973a1" />
+        <suppliersInternal>
+          <interfaceRealization Id="d27d7abb-8be8-4ea6-9ae0-3fadb96b75aa">
+            <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический объект" />
+            <elementDefinition Id="4f786769-f781-46a6-b95d-ec355cbe2fed" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="a1c8eadc-3276-4164-86da-3ba64a66ddb4" isSubstitutable="false">
+            <classMoniker Id="8d18afc7-5ef6-49ec-9e9c-0e7fc682e4bb" LastKnownName="Точка" />
+            <elementDefinition Id="d2bcf359-9339-42de-8d19-98462c91256e" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="897cfa79-b3c8-4543-ba33-4b360c620a03" isDerived="false" sourceEndRoleName="Квадрат" targetEndRoleName="Линия" isLeaf="false" isAbstract="false">
+            <classMoniker Id="069283a8-f36c-4a63-8c57-0c65723cc061" LastKnownName="Линия" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1971570-4c11-4af9-a02d-dd39d89b083e" name="Квадрат" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="86c6bb57-bb4d-4949-b64e-c43999433cba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aab6261d-858d-450e-a2c0-a93686074c32" name="Линия" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="9948c982-b7e3-4e1e-b44a-03c5a15e0586" name="Lower" value="4">
+                      <elementDefinition Id="d11e56ea-9593-46d4-96fa-1d55b8a33e40" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e3bbebba-4267-466a-8dbb-5e59a3a344af" name="Upper" value="4">
+                      <elementDefinition Id="93c0774e-728b-4067-98ae-375fad5641fc" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5c88b8a5-453d-4eac-ae85-bfda1c306fb8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="878dae66-35d0-466b-9fb9-70b34cb189b5" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="188dd3c3-1527-4a2b-9f9a-0b884aa56204" name="Размер" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c4b43fc2-c4eb-4cd8-963e-dc0b266aecbd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e232efcd-557f-43ea-b43c-0ae6c0302cbf" LastKnownName="integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="34126a01-ba4d-4fdc-af29-7ea2eb4a517a" name="Стороны" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="60d3a689-d387-4328-8713-6f6f68d9ac8c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5065ff19-44e5-4a0f-87d0-2c110224cfa5" LastKnownName="List&lt;Линия&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="00a7a37d-fea7-4838-a993-6a1c024ce34c" name="Нарисовать" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="261f9841-9f91-472a-b9ab-b83b624f6013" />
+          </operation>
+          <operation Id="1dc19961-9bf2-4ef4-8a5d-4f98292d8266" name="Повернуть" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17b4398d-5546-4614-9d0c-3b7ab6d38545" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7e6d599f-d53c-4ecf-85be-f52bc0a80587" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="ef3c1729-353d-4293-b477-db5a3067d86d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5091f6e1-6d15-4286-b5b2-b74571e49c5d" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="d1413c91-8377-4cef-9621-c0c615d1e63b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="069283a8-f36c-4a63-8c57-0c65723cc061" name="Линия" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="314d06a9-a6c1-482f-920e-fb7dad55b24f" />
+        <suppliersInternal>
+          <interfaceRealization Id="0dad4360-04d1-406f-b430-92570e606d77">
+            <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический объект" />
+            <elementDefinition Id="6212f8c4-026c-4666-997c-1d583a790daa" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="6ed84442-1676-4374-865e-8ac6a6a2b8f6" isDerived="false" sourceEndRoleName="Линия" targetEndRoleName="Точка" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8d18afc7-5ef6-49ec-9e9c-0e7fc682e4bb" LastKnownName="Точка" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2bdaef0d-56b5-4809-8de8-b61a6b53be94" name="Линия" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f2b64134-ac39-4e46-9b7b-9056ae150a93" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8abb8c85-ad35-4bf2-afb3-ebf5a454a071" name="Точка" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="ea49a464-520c-440a-9b62-50d7c37d86a6" name="Lower" value="2">
+                      <elementDefinition Id="235926e0-fee8-4391-9afb-dd398df00190" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="de2df2a5-376e-49be-a195-7357711fdf2a" name="Upper" value="2">
+                      <elementDefinition Id="ac267a93-d234-4352-98f7-824e31657f08" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="4cffcfda-81ab-447d-a6e9-d9ad3a4f530d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="30980f0e-98e5-44a7-a468-1c08dd9f8a5f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="787b166e-2dea-4720-80f4-0f823b8e86d1" name="Цвет" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99c96fd3-f637-429c-8247-f4d72ad3fa25" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="03bea888-5f6a-45c0-ae4f-3e113399d878" name="Начало" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="788cfbbc-ab08-46e1-9674-6a9672f518b0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" LastKnownName="Точка" />
+            </type_NamedElement>
+          </property>
+          <property Id="31eaf0cf-883f-49bc-b433-d5df87c97f2f" name="Конец" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="51519ae2-a380-4274-9376-d9af09d553d2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" LastKnownName="Точка" />
+            </type_NamedElement>
+          </property>
+          <property Id="8eaed33f-6b5e-4ef1-a38b-781a10dfa186" name="Родитель" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a0e9204e-f408-446c-8a92-43275fdb8197" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4dc8c2d1-8c2a-47ac-a88f-52c286c07af0" LastKnownName="Область построения" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="def92ee8-57f7-4f35-874f-e1983dfcffcf" name="Нарисовать" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bb74c085-17e3-4ae5-ab4f-b73c46db5bcf" />
+          </operation>
+          <operation Id="9d6426e4-9358-4b16-9043-a79698784ce3" name="Повернуть" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fbf82406-61eb-4748-b5cf-533662ab126a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d794a5bd-c38a-4896-88b6-fb981d13549c" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="f8696da2-062a-41b0-bf61-6bba5aace9ae" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ca076a61-6a61-4ba3-af3f-e0f7ea5b3c4c" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="e94db228-af55-41fa-894c-856c4d6fb171" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="b0b51b29-c015-4c67-8c8c-eced4ec3d59f" name="Область построения" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8f5a258f-bb39-4c19-a0f1-3fb45abe758f" />
+        <generalsInternal>
+          <generalization Id="a6f91850-26ce-44ff-9de5-d8aa9971b86f" isSubstitutable="false">
+            <classMoniker Id="ff0eb9c3-8972-441f-b722-efe5e5099d24" LastKnownName="Panel" />
+            <elementDefinition Id="ccd083ee-91e6-4355-b714-239db7071f19" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="baf63056-c7d8-4543-80c7-3334d43140af" isDerived="false" sourceEndRoleName="Область построения" targetEndRoleName="Телега" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0c2c46aa-d2ee-4e5d-a014-7b5f7071cc17" LastKnownName="Телега" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d997e5e5-84ed-4ed7-8b50-f16808da4c3b" name="Область построения" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc0c1a56-8a5b-4f9d-b88b-8834fb2f3713" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a3face2a-19cc-4ef6-aeb9-243506dcbfe4" name="Телега" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5e7605c1-f03d-4e2b-8e70-d541d5c06978" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ddd91593-b381-42dd-bae5-a87e3bcae8c5" />
+          </association>
+          <association Id="a0ec6434-c2d6-4e48-9af9-d368540a3317" isDerived="false" sourceEndRoleName="Область построения" targetEndRoleName="Колесо" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8bfa96b9-7088-4ff7-85b6-22da98d6f70b" LastKnownName="Колесо" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b5d2dc4-1b66-483f-9e18-ae56c7083bdc" name="Область построения" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cf32bdfc-b411-4aba-b91f-24bddc74a5ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="89c0fac7-63f3-445e-9f79-08e2954fd022" name="Колесо" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="e992a686-399a-46d1-826e-6c4b3ba94f48" name="Lower" value="2">
+                      <elementDefinition Id="75fb776f-9d71-4f13-b2b9-ac55abb986b4" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="6c4b6156-80b7-416a-81f4-eef5982d91bf" name="Upper" value="2">
+                      <elementDefinition Id="cbc74614-d87e-4123-b2b3-1178a09c8b11" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c77dc4c8-ae2d-431b-a37a-4334ce3c6574" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7dfec5b0-9eec-4306-a71c-4f1816e60828" />
+          </association>
+          <association Id="2cdce586-48c4-4058-bb85-4a801abc68b2" isDerived="false" sourceEndRoleName="Область построения" targetEndRoleName="Поверхность" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b2fc7e85-f0c2-4813-84be-6cc72777bbbc" LastKnownName="Поверхность" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="773b4ac3-369c-4979-8f4f-c19dc1716393" name="Область построения" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bfaa081f-d210-49eb-88b9-62d50462d5fe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6a203e6-a368-4138-9b0e-0a6ff722a3b8" name="Поверхность" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="a4431148-a677-4e9b-aec3-4505e4a0bc31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e2a9f433-5e96-45ff-bad9-74b1fc776bac" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9bee78b4-96da-45d6-ba26-7ca2b9d071d8" name="параметры" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da774129-e5a6-4342-9acf-944b3090f08b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c6904087-c97e-4f21-a64e-df2de69d5ba9" LastKnownName="Параметры" />
+            </type_NamedElement>
+          </property>
+          <property Id="f4d6ae62-a60a-451e-92b3-be965898c110" name="Высота телеги" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3430cb1c-960e-437a-b5d3-380711cb9968" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="73d5fd52-ea29-43e0-ae1d-146e3a0b9548" LastKnownName="integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="6a1d8c1f-3bea-4045-bb8e-c4a1da6c8077" name="Длина телеги" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ed48d9f6-201d-4c1e-8d76-7eacbb63123d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="73d5fd52-ea29-43e0-ae1d-146e3a0b9548" LastKnownName="integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="04561c04-ce19-4364-8b21-97905411357c" name="Размер левого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca394c5d-025b-4947-add2-aaa2aa806bb4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0e747201-8d6b-4995-8176-c20cf07e6813" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="686421d4-06a3-47f7-8041-3f1cc0e49ee1" name="Размер правого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9568c7eb-2a3f-45c6-898c-61c46d4ff7bf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7f143b45-5599-4c39-b274-16b8d529e4ce" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="2f52e4e2-39fe-431d-acf3-820189a1592a" name="Скорость движения" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="406bf8cf-0e40-4fc3-a716-f8e8727c9a9c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f4da8243-6170-4516-a112-90ad2a413db3" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="4601d6fe-1872-4b64-bdb9-1852fa9ed19c" name="Цвет левого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="017a71ca-9940-47e8-bb93-b76d6bca0b24" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="71f05253-8cd7-4a76-9b8c-14c604944d1b" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="69f0842e-c29a-4cb3-a4a7-5a50929433f8" name="Цвет правого колеса" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7a84442e-4aee-4185-adfb-b682b0841efe" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="71f05253-8cd7-4a76-9b8c-14c604944d1b" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="3fa16dd7-3cf3-4082-a6a7-4b0e5468a390" name="Цвет телеги" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4bc858cb-037a-4f0a-815c-eaa76934f1e3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="71f05253-8cd7-4a76-9b8c-14c604944d1b" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="7becbb8b-adf9-40cb-b04c-d7c1f798e628" name="Приращение угла" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f65cc32-9cd2-4c68-99e8-5917e32ce011" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+          <property Id="69d0ba97-6d23-4e90-9f7c-68d09daddc96" name="поверхность" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9708fe9d-1bf7-41ea-a5c1-83610fecb124" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="965dbcc5-364e-4ef7-b1a1-533e3b95f74b" LastKnownName="Поверхность" />
+            </type_NamedElement>
+          </property>
+          <property Id="348541c2-9dd0-43c4-9cba-e0bf036e3e7f" name="Правое колесо" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="febc65aa-bcae-4740-bf64-9fdfa342fb26" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1719e064-7c8f-4136-a3cb-7f66c8e25b03" LastKnownName="Колесо" />
+            </type_NamedElement>
+          </property>
+          <property Id="70d95416-583f-41e7-8c43-c5c925bdcb0a" name="Левое колесо" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c8cb0d21-1a50-4fef-87be-e5a611f12e9e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="58c682e3-d833-465f-bbb6-1e15a07567c3" LastKnownName="Колесо" />
+            </type_NamedElement>
+          </property>
+          <property Id="13d35c9c-c81f-4186-9f3b-4a30351a645e" name="телега" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ebbbd92-0340-4a30-bc17-311e4cb57410" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a7454cb-cf05-4c6d-a936-dec68253ddbd" LastKnownName="Телега" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="cc098022-fec8-4830-a2fe-7ecb0023c32c" name="Инициализация графических объектов" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d4582f43-69d2-469b-95d3-93aed7d04a15" />
+          </operation>
+          <operation Id="6c9a234c-228d-43c6-af47-f3bc502c4de2" name="Сдвинуть" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="19383ee7-e0c8-4bc0-9dc2-93728c3239d8" />
+          </operation>
+          <operation Id="440e0d2e-4e25-4e5f-b724-28ed67e8d276" name="Сбросить движение" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="444dfcf1-e012-402e-88dd-f4b585a97de0" />
+          </operation>
+          <operation Id="a08d04cd-915e-4cee-97d9-6f4a7b77bb7d" name="Проверка окончания моделирования" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="68a3f1ac-0ad7-4691-b2c9-2c148ad9e512" />
+          </operation>
+          <operation Id="09e1ac1c-cafa-401c-ab94-e590eb455fa9" name="OnPaint" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8db9113b-adb7-4126-b4f8-f0bf8bed6d7c" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="8bfa96b9-7088-4ff7-85b6-22da98d6f70b" name="Колесо" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7ab7e0a2-25d4-49c8-b3ba-62abcc7ad865" />
+        <suppliersInternal>
+          <interfaceRealization Id="c2a28864-3e95-481c-897d-17aa5c468786">
+            <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический объект" />
+            <elementDefinition Id="e65c5984-8475-4656-a334-4d9be6e5e1ac" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="a9cd17f2-a560-470a-b4c2-d3775d11db48" isSubstitutable="false">
+            <classMoniker Id="71529df5-a101-459f-9918-11a67d970907" LastKnownName="Квадрат" />
+            <elementDefinition Id="fbfa7b0f-c601-4517-adae-4c549629c31b" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="db6e04f3-5b55-4839-9768-6d6b7afffe13" name="Родитель" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6cc427cc-1a65-4ac7-a9b2-bc1bdb7f2c4a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f0f2d3fe-1972-49f6-87fd-437dcb81f5b5" LastKnownName="Область построения" />
+            </type_NamedElement>
+          </property>
+          <property Id="06330ec3-94f2-4d13-9133-9c91b266d675" name="Ось поворота" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3905ba9e-5542-486c-a0ce-40c4ec906665" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8a476adb-8375-4faf-aa7d-d7817c80648e" LastKnownName="Точка" />
+            </type_NamedElement>
+          </property>
+          <property Id="28fa80c8-9065-48bb-977b-615a2f1675b8" name="Центр" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="89edfa1f-e753-449d-8962-6e4f431dbbdf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" LastKnownName="Точка" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="707343ca-7c37-42c4-a37f-00511517e4a9" name="Повернуть" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="299d1ff7-4d10-43d2-91d0-3fbe7c994abd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dce64b73-6fca-4c1c-83b5-312f2aa544b6" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="3242992c-de4d-4b84-928a-11af5b581cc8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8fccab5d-c54b-4941-814c-9382583dd54d" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="d83750f3-9e02-44d1-8649-439976e70307" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7aad551b-f8a1-44ab-9430-425dc4ac690c" name="Найти ось вращения" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1812f6a4-7b64-4bf3-8361-68e902065371" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fb8a300b-c514-4c9d-9b01-7eb2d4ac356f" direction="Return" isUnique="false">
+                  <elementDefinition Id="eeb81933-a0d4-4ffe-807f-36b877cdb2ba" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" LastKnownName="Точка" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8903db64-0d8a-4237-9a29-ccdf1a24452d" name="Проверка линии на пересечение с поверхностью" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d245adf1-24da-42d6-8bf3-4be65c8c33c9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7dd3d7d3-b14e-4957-ba6f-81d69473568c" name="list" direction="InOut" isUnique="false">
+                  <elementDefinition Id="8bd16cad-9f5a-4376-bfb5-6c0104f7b149" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7a3c91bc-5ff5-4b71-953b-381adb2f6319" LastKnownName="List&lt;Точка&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dacb67e1-a8a3-47fb-af33-7f0bcd06e835" name="x1" direction="In" isUnique="false">
+                  <elementDefinition Id="18d1cdd5-3653-49f9-a072-ba5771f88ace" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dce21a00-e874-425c-ab1d-f672ae7a0fea" name="x2" direction="In" isUnique="false">
+                  <elementDefinition Id="83554bd0-80a8-4cdf-9185-f58ccf332f83" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c7b8ff68-c517-4726-ab78-f85efdb99a00" name="y1" direction="In" isUnique="false">
+                  <elementDefinition Id="70c1e466-4a9f-46cb-99fa-08fe921e90ae" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="25055bd7-e172-4d15-935e-5fb7f1ad926d" name="y2" direction="In" isUnique="false">
+                  <elementDefinition Id="aa7e274d-43b4-42c8-af1b-8977eadae1b9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="b2fc7e85-f0c2-4813-84be-6cc72777bbbc" name="Поверхность" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="637469db-0983-40f1-adc4-78b45dfe7f6f" />
+        <suppliersInternal>
+          <interfaceRealization Id="90835095-1669-42b5-8493-2d97b220b793">
+            <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический объект" />
+            <elementDefinition Id="b238e91e-08ff-4b2d-a707-4523d3712c1b" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="eb47615c-705a-4075-badb-cda2d7192a64" name="Родитель" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5232ac9-9f2b-41ea-ad86-86b38634402e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f0f2d3fe-1972-49f6-87fd-437dcb81f5b5" LastKnownName="Область построения" />
+            </type_NamedElement>
+          </property>
+          <property Id="32bce6fd-b3b1-4572-8539-a29b04a3678e" name="Цвет" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1417b3b6-270d-4fcd-922d-7e883343fc4e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="630e0009-bd40-429f-a500-f687bb431988" name="Коэф1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ac2365d5-59a0-480b-9bac-d5b3c958b04a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="777d9e3f-d644-4cc9-aac5-b7fbf1e334e2" LastKnownName="integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="2b5bc2ce-a458-42d3-bedd-a61d864521ce" name="Коэф2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f283a7cf-0d82-430b-b8d3-255237f3a401" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8bb4d0f5-dfb5-4a36-8013-ef3b5d05e023" LastKnownName="integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="22ffd38d-f010-42ef-886c-d050eee2e1a4" name="Нарисовать" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8b4f1f4-ff66-402f-99a3-7c6c7acb2c10" />
+          </operation>
+          <operation Id="e58d4f2f-5c93-4f7d-8caa-b2866e52719a" name="Повернуть" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b30af959-4574-4e2c-924c-b1506e7b118c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b3f268a3-49b1-4532-a9d8-6e42b23fc4cb" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="e12d0485-2ea7-4eec-986d-64e86901e721" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ad2fe9d6-36e7-462b-bf59-76314a1bbb33" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="519fdc7e-6cc0-43e1-a837-f12c2bf0703f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="024ee7c4-6ca0-4013-b167-2b2cc3b47f0d" name="Значение для X" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1c3bb0a4-76c3-4713-ad69-21cef049f0c9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7c695967-efe2-44b1-9eb8-01604341ee80" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="95017909-8e7f-4ccf-a5e7-05cfb0f1ad5d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="02ccf971-3fb6-4e62-a570-a23aa2ce0494" direction="Return" isUnique="false">
+                  <elementDefinition Id="d0e7bfbf-ea55-4dc6-967f-d6a3dc5dd8fe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" name="Точка" isAbstract="false" isLeaf="false" cachedFullName="Точка">
+        <elementDefinition Id="ee273c74-1f85-4d93-996d-a110c701cfb6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5065ff19-44e5-4a0f-87d0-2c110224cfa5" name="List&lt;Линия&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Линия&gt;">
+        <elementDefinition Id="941db4b8-ae72-4b03-a12b-14b5b96a30cd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8a476adb-8375-4faf-aa7d-d7817c80648e" name="Точка" isAbstract="false" isLeaf="false" cachedFullName="Точка">
+        <elementDefinition Id="ee273c74-1f85-4d93-996d-a110c701cfb6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7a3c91bc-5ff5-4b71-953b-381adb2f6319" name="List&lt;Точка&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Точка&gt;">
+        <elementDefinition Id="3a2a177c-3905-4553-bbfb-46e6098aad2a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e232efcd-557f-43ea-b43c-0ae6c0302cbf" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="53bd30cd-dda6-4dfb-b158-91792307ff93" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f0f2d3fe-1972-49f6-87fd-437dcb81f5b5" name="Область построения" isAbstract="false" isLeaf="false" cachedFullName="Область построения">
+        <elementDefinition Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4dc8c2d1-8c2a-47ac-a88f-52c286c07af0" name="Область построения" isAbstract="false" isLeaf="false" cachedFullName="Область построения">
+        <elementDefinition Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1c60ab96-a875-4f06-be57-bf4ece1f4d13" name="Область построения" isAbstract="false" isLeaf="false" cachedFullName="Область построения">
+        <elementDefinition Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8f77bf9d-8a31-4a89-8167-6115974d6e0b" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="f3a50823-4069-428d-8bea-6e7b353a68e6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0c2c46aa-d2ee-4e5d-a014-7b5f7071cc17" name="Телега" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82fdf6d8-7b18-4012-bc71-d497147da5ba" />
+        <suppliersInternal>
+          <interfaceRealization Id="d140ea28-aa9b-4e8b-a011-768d9f31535f">
+            <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический объект" />
+            <elementDefinition Id="b649c249-665e-4c4a-a46c-18cb778368b6" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="b0361cd0-60f2-4029-9706-95c83198d1dd" name="Цвет" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c039cd7a-1151-49fa-b580-415ec853e79f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5f41c311-74fa-4f4b-a7b7-3d340873d3e9" LastKnownName="Color" />
+            </type_NamedElement>
+          </property>
+          <property Id="066246b8-e5ca-4724-a27e-b13057e7d558" name="Левая ось" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da5463bc-9565-4cd0-867d-345946e56d68" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" LastKnownName="Точка" />
+            </type_NamedElement>
+          </property>
+          <property Id="f9a7b741-b1a4-46b5-ac2c-61e148f62bd6" name="Правая ось" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="824d94e3-df3a-4ec1-854a-1bae8cf5934d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" LastKnownName="Точка" />
+            </type_NamedElement>
+          </property>
+          <property Id="9e33f037-9c19-47c3-8d09-674afb589dd7" name="Родитель" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b73c795-7e8c-45a1-9e82-35e839773dbf" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f0f2d3fe-1972-49f6-87fd-437dcb81f5b5" LastKnownName="Область построения" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8e6ac8b4-d06b-44ff-8334-8ddf32e8e9f3" name="Нарисовать" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="53fefadc-3ba6-474c-8d72-b761866d9ac1" />
+          </operation>
+          <operation Id="915b0667-4299-4e6a-b7ca-e5191d20b96e" name="Повернуть" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="900a7d78-2ad4-45c8-a0f9-160f084a51e9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="61e15351-fc3d-4ca6-935e-99e4cdb3853e" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="24ff53e8-a2f8-4c61-a11b-d14a24a9db07" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d0ca074b-79c3-4aaf-9409-dcd8c52ae1eb" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="d5d0ac31-e3e1-4fef-acae-754459af6add" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="589a3b27-1b2d-4a82-ab15-732ca2d81da9" name="Обновить положение" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5d8f7552-e76c-46b6-9069-a8a9326b6e3a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="891c5431-2a48-49e4-9c54-0b638272201e" name="Левая ось" direction="In" isUnique="false">
+                  <elementDefinition Id="0f0f7992-2522-478e-85f3-c4298ecac719" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" LastKnownName="Точка" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="31373059-908d-4f1b-bf39-662bc611c525" name="Правая ось" direction="In" isUnique="false">
+                  <elementDefinition Id="df93073d-1a52-4b77-a19e-34f4057e5fe1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="19c99cf0-2fe5-4e3c-b969-c3b62e477971" LastKnownName="Точка" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="75a81e79-ada3-4b5d-a744-d59bd989091d" name="Ресчет вершин" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85a9c21a-78e9-488f-bdeb-d2667fc1f52f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="432d23ba-c8db-4fdb-9a55-f0328f9bbd7a" name="x1v" direction="Out" isUnique="false">
+                  <elementDefinition Id="f37ebec4-e09f-477e-8c2d-788bee7be41f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6a98e40a-7583-4608-ae5c-15b704799077" name="y1v" direction="Out" isUnique="false">
+                  <elementDefinition Id="61241146-0aac-4c6b-82fa-34c22b747f3c" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="89b2f935-02d7-43c6-ab4e-94970fda7170" name="x2v" direction="Out" isUnique="false">
+                  <elementDefinition Id="67be6716-bd3b-4943-a1c3-385a00b9bee5" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a308accc-1f61-4bf4-bdb3-53dc8a0e26c1" name="y2v" direction="Out" isUnique="false">
+                  <elementDefinition Id="8f2abee4-3dcf-44d4-9569-99f1a437e492" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4db08b40-af6c-435c-b76a-2934a963d6f5" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c6904087-c97e-4f21-a64e-df2de69d5ba9" name="Параметры" isAbstract="false" isLeaf="false" cachedFullName="Параметры">
+        <elementDefinition Id="78d5201d-377f-4521-95f6-f5fb2d9951bf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="73d5fd52-ea29-43e0-ae1d-146e3a0b9548" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="53bd30cd-dda6-4dfb-b158-91792307ff93" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0e747201-8d6b-4995-8176-c20cf07e6813" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7f143b45-5599-4c39-b274-16b8d529e4ce" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f4da8243-6170-4516-a112-90ad2a413db3" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="33e51dac-130d-456c-9c92-6d02ee6c94a7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="71f05253-8cd7-4a76-9b8c-14c604944d1b" name="Color" isAbstract="false" isLeaf="false" cachedFullName="Color">
+        <elementDefinition Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="965dbcc5-364e-4ef7-b1a1-533e3b95f74b" name="Поверхность" isAbstract="false" isLeaf="false" cachedFullName="Поверхность">
+        <elementDefinition Id="45386a8a-2c05-4e6b-a55f-55148bfdc553" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1719e064-7c8f-4136-a3cb-7f66c8e25b03" name="Колесо" isAbstract="false" isLeaf="false" cachedFullName="Колесо">
+        <elementDefinition Id="33d0f148-eff8-44ec-b0ce-e3b98827e9a1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="58c682e3-d833-465f-bbb6-1e15a07567c3" name="Колесо" isAbstract="false" isLeaf="false" cachedFullName="Колесо">
+        <elementDefinition Id="33d0f148-eff8-44ec-b0ce-e3b98827e9a1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a7454cb-cf05-4c6d-a936-dec68253ddbd" name="Телега" isAbstract="false" isLeaf="false" cachedFullName="Движение телеги::Телега">
+        <elementDefinition Id="82fdf6d8-7b18-4012-bc71-d497147da5ba" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ff0eb9c3-8972-441f-b722-efe5e5099d24" name="Panel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6a68c6e4-8366-4ff7-bee6-50385c11411c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="777d9e3f-d644-4cc9-aac5-b7fbf1e334e2" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="53bd30cd-dda6-4dfb-b158-91792307ff93" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8bb4d0f5-dfb5-4a36-8013-ef3b5d05e023" name="integer" isAbstract="false" isLeaf="false" cachedFullName="integer">
+        <elementDefinition Id="53bd30cd-dda6-4dfb-b158-91792307ff93" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="6c817deb-416d-492e-b051-fd642c616ac6" name="Движение телеги">
     <elementDefinition Id="edd83bb0-5dce-41d5-b3d3-0b035bebb3fc" />

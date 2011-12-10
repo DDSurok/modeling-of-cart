@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="2f69b99e-f164-4d0a-b6ad-bb75655ab8b3"
   name="Графические объекты" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -7,7 +7,7 @@
     <packageHasNamedElement>
       <class
         Id="7ab7e0a2-25d4-49c8-b3ba-62abcc7ad865"
-        name="Квадратное колесо"
+        name="Колесо"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -20,10 +20,21 @@
               LastKnownLocation="Package_0057.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="fbfa7b0f-c601-4517-adae-4c549629c31b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8e230da5-a6b1-48a4-a07e-b0d5b7f973a1"
+              LastKnownName="Квадрат"
+              LastKnownLocation="Package_0057.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
-            Id="0558d0d4-ce5b-49b3-8adf-8d76a0aac998"
-            name="Размер"
+            Id="6cc427cc-1a65-4ac7-a9b2-bc1bdb7f2c4a"
+            name="Родитель"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -33,15 +44,16 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
-                LastKnownLocation="Движение телеги.uml" />
+              <undefinedTypeMoniker
+                Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b"
+                LastKnownName="Область построения"
+                LastKnownLocation="Package_0057.uml" />
             </type_NamedElement>
           </property>
           <property
-            Id="0cb75e1b-8117-4f18-95e0-72b12e32561d"
-            name="Цвет"
+            Id="3905ba9e-5542-486c-a0ce-40c4ec906665"
+            name="Ось поворота"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -49,17 +61,159 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                LastKnownName="Точка"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="89edfa1f-e753-449d-8962-6e4f431dbbdf"
+            name="Центр"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                LastKnownName="Точка"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="143c04ae-2386-4575-b51b-cc82ac314eaa"
-            name="Перерисовать"
+            Id="299d1ff7-4d10-43d2-91d0-3fbe7c994abd"
+            name="Повернуть"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3242992c-de4d-4b84-928a-11af5b581cc8"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d83750f3-9e02-44d1-8649-439976e70307"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1812f6a4-7b64-4bf3-8361-68e902065371"
+            name="Найти ось вращения"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eeb81933-a0d4-4ffe-807f-36b877cdb2ba"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                      LastKnownName="Точка"
+                      LastKnownLocation="Движение телеги.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d245adf1-24da-42d6-8bf3-4be65c8c33c9"
+            name="Проверка линии на пересечение с поверхностью"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8bd16cad-9f5a-4376-bfb5-6c0104f7b149"
+                  name="list"
+                  direction="InOut"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3a2a177c-3905-4553-bbfb-46e6098aad2a"
+                      LastKnownName="List&lt;Точка&gt;"
+                      LastKnownLocation="Движение телеги.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18d1cdd5-3653-49f9-a072-ba5771f88ace"
+                  name="x1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83554bd0-80a8-4cdf-9185-f58ccf332f83"
+                  name="x2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70c1e466-4a9f-46cb-99fa-08fe921e90ae"
+                  name="y1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aa7e274d-43b4-42c8-af1b-8977eadae1b9"
+                  name="y2"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -92,10 +246,10 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
-                LastKnownLocation="Движение телеги.uml" />
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -110,29 +264,68 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
-                LastKnownLocation="Движение телеги.uml" />
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="712b9f9b-2185-4322-b0db-e8f784b4e8eb"
-            name="Перерисовать"
+            name="Нарисовать"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="4ed07164-f96c-41cb-86b6-1bfaeec4924a"
+            name="Повернуть"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b6b7266e-1b72-45ea-bd2f-574df0ab59c1"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e61ab0d3-7ae4-4fc6-8e23-8b74b0902d4c"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="637469db-0983-40f1-adc4-78b45dfe7f6f"
-        name="Местность"
+        name="Поверхность"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -145,15 +338,166 @@
               LastKnownLocation="Package_0057.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f5232ac9-9f2b-41ea-ad86-86b38634402e"
+            name="Родитель"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b"
+                LastKnownName="Область построения"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1417b3b6-270d-4fcd-922d-7e883343fc4e"
+            name="Цвет"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ac2365d5-59a0-480b-9bac-d5b3c958b04a"
+            name="Коэф1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f283a7cf-0d82-430b-b8d3-255237f3a401"
+            name="Коэф2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="c8b4f1f4-ff66-402f-99a3-7c6c7acb2c10"
-            name="Перерисовать"
+            name="Нарисовать"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="b30af959-4574-4e2c-924c-b1506e7b118c"
+            name="Повернуть"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e12d0485-2ea7-4eec-986d-64e86901e721"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="519fdc7e-6cc0-43e1-a837-f12c2bf0703f"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1c3bb0a4-76c3-4713-ad69-21cef049f0c9"
+            name="Значение для X"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="95017909-8e7f-4ccf-a5e7-05cfb0f1ad5d"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d0e7bfbf-ea55-4dc6-967f-d6a3dc5dd8fe"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -211,7 +555,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="61133846-5161-4420-acaa-7d337aaac539"
             name="Длина телеги"
@@ -222,7 +573,104 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8992f98a-4c4b-40a4-b6fc-ce7c8b130848"
+            name="Цвет левого колеса"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9deb863a-49e7-4297-9fe2-b12fde392eb3"
+            name="Цвет правого колеса"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7c641645-d605-4d4e-9539-8849e11fc017"
+            name="Цвет телеги"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="98f45b2d-1a98-49c5-be46-75fb1ce4c1d0"
+            name="Скорость движения"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                LastKnownName="double"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6a216f6c-9d20-40fa-8d31-56658827c372"
+            name="Смещение по оси Y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f3a50823-4069-428d-8bea-6e7b353a68e6"
+                LastKnownName="int"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -234,19 +682,8 @@
         isLeaf="false">
         <ownedAttributes>
           <property
-            Id="88c3645c-dffa-4184-8cef-909dbacfb5df"
-            name="Координаты положения"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="84493958-e2c9-470e-aa1e-83ee13e6c634"
-            name="Палитра"
+            name="Цвет"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -254,17 +691,63 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributes>
         <ownedOperations>
           <operation
             Id="86be224e-91f2-496b-b9ed-a47049053b18"
-            name="Перерисовать"
+            name="Нарисовать"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="bbd2ec07-3549-47bd-b3ae-5a8e9607d3e3"
+            name="Повернуть"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="955a08f4-f841-4c39-a635-a51c46ce8f2d"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="38428abb-37de-4986-87a0-ed909b465bf5"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
@@ -376,6 +859,1040 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0a71eecb-ea78-4f7c-b122-045db85512f7"
+        name="Точка"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="25a3494b-bdc6-4b26-aa71-1a2072f0a9f6">
+            <interfaceMoniker
+              Id="5412d256-c6f1-45db-ba2c-0a57a81c8794"
+              LastKnownName="Графический объект"
+              LastKnownLocation="Package_0057.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e1a3bb20-bd56-4282-997c-77c1ee8991cc"
+            name="X"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                LastKnownName="double"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8cdcdc07-8b09-4cec-9e89-56fd5396dbed"
+            name="Y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                LastKnownName="double"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="53b4ab6c-89dc-4885-8c3d-ef1dbe09cd4f"
+            name="Цвет"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="33c0a13a-e276-4a7c-87a5-1c0e6fd47504"
+            name="Родитель"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b"
+                LastKnownName="Область построения"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="be50c8f1-bc28-46af-9a97-f401d2534c47"
+            name="Нарисовать"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b42c2278-2e0c-4e82-b7c7-d85927f12d4b"
+            name="Повернуть"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1105e6c-bc19-4f1c-8ed4-b09a569f85bc"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8bcf1b9-5c29-4465-85d9-0d149c99662f"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d99c79b7-3bd4-4692-b17a-6e90ae348f15"
+            name="Расстояние между двумя точками"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6efb3d82-3505-49e9-bd6d-183a9663083a"
+                  name="точка1"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a71eecb-ea78-4f7c-b122-045db85512f7"
+                      LastKnownName="Точка"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9a1b7541-b9b4-4452-afb3-ea827ae2c463"
+                  name="точка2"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0a71eecb-ea78-4f7c-b122-045db85512f7"
+                      LastKnownName="Точка"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="00b59571-4882-4dbf-ad18-d29291e2994e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+        name="integer" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+        name="double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+        name="Color" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="314d06a9-a6c1-482f-920e-fb7dad55b24f"
+        name="Линия"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="6212f8c4-026c-4666-997c-1d583a790daa">
+            <interfaceMoniker
+              Id="5412d256-c6f1-45db-ba2c-0a57a81c8794"
+              LastKnownName="Графический объект"
+              LastKnownLocation="Package_0057.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="30980f0e-98e5-44a7-a468-1c08dd9f8a5f"
+            isDerived="false"
+            sourceEndRoleName="Линия"
+            targetEndRoleName="Точка"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0a71eecb-ea78-4f7c-b122-045db85512f7"
+              LastKnownName="Точка"
+              LastKnownLocation="Package_0057.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2b64134-ac39-4e46-9b7b-9056ae150a93"
+                  name="Линия"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4cffcfda-81ab-447d-a6e9-d9ad3a4f530d"
+                  name="Точка"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="235926e0-fee8-4391-9afb-dd398df00190"
+                      name="Lower"
+                      value="2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ac267a93-d234-4352-98f7-824e31657f08"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="99c96fd3-f637-429c-8247-f4d72ad3fa25"
+            name="Цвет"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="788cfbbc-ab08-46e1-9674-6a9672f518b0"
+            name="Начало"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                LastKnownName="Точка"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="51519ae2-a380-4274-9376-d9af09d553d2"
+            name="Конец"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ee273c74-1f85-4d93-996d-a110c701cfb6"
+                LastKnownName="Точка"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a0e9204e-f408-446c-8a92-43275fdb8197"
+            name="Родитель"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b"
+                LastKnownName="Область построения"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bb74c085-17e3-4ae5-ab4f-b73c46db5bcf"
+            name="Нарисовать"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fbf82406-61eb-4748-b5cf-533662ab126a"
+            name="Повернуть"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f8696da2-062a-41b0-bf61-6bba5aace9ae"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e94db228-af55-41fa-894c-856c4d6fb171"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8e230da5-a6b1-48a4-a07e-b0d5b7f973a1"
+        name="Квадрат"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4f786769-f781-46a6-b95d-ec355cbe2fed">
+            <interfaceMoniker
+              Id="5412d256-c6f1-45db-ba2c-0a57a81c8794"
+              LastKnownName="Графический объект"
+              LastKnownLocation="Package_0057.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="d2bcf359-9339-42de-8d19-98462c91256e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0a71eecb-ea78-4f7c-b122-045db85512f7"
+              LastKnownName="Точка"
+              LastKnownLocation="Package_0057.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="878dae66-35d0-466b-9fb9-70b34cb189b5"
+            isDerived="false"
+            sourceEndRoleName="Квадрат"
+            targetEndRoleName="Линия"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="314d06a9-a6c1-482f-920e-fb7dad55b24f"
+              LastKnownName="Линия"
+              LastKnownLocation="Package_0057.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86c6bb57-bb4d-4949-b64e-c43999433cba"
+                  name="Квадрат"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c88b8a5-453d-4eac-ae85-bfda1c306fb8"
+                  name="Линия"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d11e56ea-9593-46d4-96fa-1d55b8a33e40"
+                      name="Lower"
+                      value="4" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="93c0774e-728b-4067-98ae-375fad5641fc"
+                      name="Upper"
+                      value="4" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c4b43fc2-c4eb-4cd8-963e-dc0b266aecbd"
+            name="Размер"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="60d3a689-d387-4328-8713-6f6f68d9ac8c"
+            name="Стороны"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="941db4b8-ae72-4b03-a12b-14b5b96a30cd"
+                LastKnownName="List&lt;Линия&gt;"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="261f9841-9f91-472a-b9ab-b83b624f6013"
+            name="Нарисовать"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="17b4398d-5546-4614-9d0c-3b7ab6d38545"
+            name="Повернуть"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ef3c1729-353d-4293-b477-db5a3067d86d"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d1413c91-8377-4cef-9621-c0c615d1e63b"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                      LastKnownName="double"
+                      LastKnownLocation="Package_0057.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9d4e9aff-0248-4863-bb12-97bef2e1b35b"
+        name="Область построения" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8f5a258f-bb39-4c19-a0f1-3fb45abe758f"
+        name="Область построения"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ccd083ee-91e6-4355-b714-239db7071f19"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6a68c6e4-8366-4ff7-bee6-50385c11411c"
+              LastKnownName="Panel"
+              LastKnownLocation="Движение телеги.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="ddd91593-b381-42dd-bae5-a87e3bcae8c5"
+            isDerived="false"
+            sourceEndRoleName="Область построения"
+            targetEndRoleName="Телега"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="82fdf6d8-7b18-4012-bc71-d497147da5ba"
+              LastKnownName="Телега"
+              LastKnownLocation="Движение телеги.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc0c1a56-8a5b-4f9d-b88b-8834fb2f3713"
+                  name="Область построения"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e7605c1-f03d-4e2b-8e70-d541d5c06978"
+                  name="Телега"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7dfec5b0-9eec-4306-a71c-4f1816e60828"
+            isDerived="false"
+            sourceEndRoleName="Область построения"
+            targetEndRoleName="Колесо"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7ab7e0a2-25d4-49c8-b3ba-62abcc7ad865"
+              LastKnownName="Колесо"
+              LastKnownLocation="Package_0057.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf32bdfc-b411-4aba-b91f-24bddc74a5ff"
+                  name="Область построения"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c77dc4c8-ae2d-431b-a37a-4334ce3c6574"
+                  name="Колесо"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="75fb776f-9d71-4f13-b2b9-ac55abb986b4"
+                      name="Lower"
+                      value="2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cbc74614-d87e-4123-b2b3-1178a09c8b11"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e2a9f433-5e96-45ff-bad9-74b1fc776bac"
+            isDerived="false"
+            sourceEndRoleName="Область построения"
+            targetEndRoleName="Поверхность"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="637469db-0983-40f1-adc4-78b45dfe7f6f"
+              LastKnownName="Поверхность"
+              LastKnownLocation="Package_0057.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bfaa081f-d210-49eb-88b9-62d50462d5fe"
+                  name="Область построения"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a4431148-a677-4e9b-aec3-4505e4a0bc31"
+                  name="Поверхность"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="da774129-e5a6-4342-9acf-944b3090f08b"
+            name="параметры"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="78d5201d-377f-4521-95f6-f5fb2d9951bf"
+                LastKnownName="Параметры"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3430cb1c-960e-437a-b5d3-380711cb9968"
+            name="Высота телеги"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ed48d9f6-201d-4c1e-8d76-7eacbb63123d"
+            name="Длина телеги"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="53bd30cd-dda6-4dfb-b158-91792307ff93"
+                LastKnownName="integer"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ca394c5d-025b-4947-add2-aaa2aa806bb4"
+            name="Размер левого колеса"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9568c7eb-2a3f-45c6-898c-61c46d4ff7bf"
+            name="Размер правого колеса"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="406bf8cf-0e40-4fc3-a716-f8e8727c9a9c"
+            name="Скорость движения"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                LastKnownName="double"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="017a71ca-9940-47e8-bb93-b76d6bca0b24"
+            name="Цвет левого колеса"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7a84442e-4aee-4185-adfb-b682b0841efe"
+            name="Цвет правого колеса"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4bc858cb-037a-4f0a-815c-eaa76934f1e3"
+            name="Цвет телеги"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d2c71ad6-b913-40bf-b2be-3f0798aa7f02"
+                LastKnownName="Color"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3f65cc32-9cd2-4c68-99e8-5917e32ce011"
+            name="Приращение угла"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="33e51dac-130d-456c-9c92-6d02ee6c94a7"
+                LastKnownName="double"
+                LastKnownLocation="Package_0057.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9708fe9d-1bf7-41ea-a5c1-83610fecb124"
+            name="поверхность"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="45386a8a-2c05-4e6b-a55f-55148bfdc553"
+                LastKnownName="Поверхность"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="febc65aa-bcae-4740-bf64-9fdfa342fb26"
+            name="Правое колесо"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="33d0f148-eff8-44ec-b0ce-e3b98827e9a1"
+                LastKnownName="Колесо"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c8cb0d21-1a50-4fef-87be-e5a611f12e9e"
+            name="Левое колесо"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="33d0f148-eff8-44ec-b0ce-e3b98827e9a1"
+                LastKnownName="Колесо"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3ebbbd92-0340-4a30-bc17-311e4cb57410"
+            name="телега"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="82fdf6d8-7b18-4012-bc71-d497147da5ba"
+                LastKnownName="Телега"
+                LastKnownLocation="Движение телеги.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d4582f43-69d2-469b-95d3-93aed7d04a15"
+            name="Инициализация графических объектов"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="19383ee7-e0c8-4bc0-9dc2-93728c3239d8"
+            name="Сдвинуть"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="444dfcf1-e012-402e-88dd-f4b585a97de0"
+            name="Сбросить движение"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="68a3f1ac-0ad7-4691-b2c9-2c148ad9e512"
+            name="Проверка окончания моделирования"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8db9113b-adb7-4126-b4f8-f0bf8bed6d7c"
+            name="OnPaint"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>

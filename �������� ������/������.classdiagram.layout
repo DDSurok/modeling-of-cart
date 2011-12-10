@@ -1,58 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 8.5" name="UMLClassDiagram1">
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.75, 8.5" name="UMLClassDiagram1">
   <logicalClassDesignerModelMoniker Id="efdbd039-3f4e-4af6-9439-121329af518e" />
   <nestedChildShapes>
-    <packageShape Id="086de0fa-afeb-46e8-919a-03a9edd995e9" absoluteBounds="0.5, 0.5, 8.125, 6.125" customColor="255, 249, 230" hideQualifiedName="false">
-      <packageMoniker Id="6621aec1-2e6a-4d20-a93b-fd3d543e518c" LastKnownName="Графические объекты" />
+    <classShape Id="a773a416-b173-4d20-bf08-f6aab23fc6ea" absoluteBounds="2.625, 5.75, 5.625, 1.8632812052965164" hideQualifiedName="true" showFullSignature="true" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="8bfa96b9-7088-4ff7-85b6-22da98d6f70b" LastKnownName="Колесо" />
+      <relativeChildShapes>
+        <lollipopShape Id="432c6cf8-8a04-4258-8f10-84f69f1a95bc" absoluteBounds="2.7750000000000004, 5.4839965412467722, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+          <relativeChildShapes>
+            <lollipopLabelShape Id="893b7436-627b-4c41-b4cd-395c7ed51c00" absoluteBounds="2.9449999973177903, 5.4839965412467722, 1.1275860071182251, 0.2060034589767456" qualifiedName="Движение телеги::Графические объекты::Графический объект" hideQualifiedName="true" />
+          </relativeChildShapes>
+        </lollipopShape>
+      </relativeChildShapes>
       <nestedChildShapes>
-        <classShape Id="a773a416-b173-4d20-bf08-f6aab23fc6ea" absoluteBounds="0.75, 2.625, 1.625, 1.3828124701976776" hideQualifiedName="false" showFullSignature="true" increaseHeight="0" customColor="181, 193, 223">
-          <classMoniker Id="8bfa96b9-7088-4ff7-85b6-22da98d6f70b" LastKnownName="Квадратное колесо" />
-          <nestedChildShapes>
-            <AttributeElementListCompartment Id="14092878-8606-4dae-8088-c168d7a4262e" absoluteBounds="0.765, 3.015, 1.5950000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-            <OperationElementListCompartment Id="9303c465-64aa-457b-9d53-25db09b1cd42" absoluteBounds="0.765, 3.546484357615312, 1.5950000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-          </nestedChildShapes>
-        </classShape>
-        <classShape Id="4ef5b8f5-6e68-4ada-a427-ec4eba224cc2" absoluteBounds="2.5, 2.625, 1.25, 1.3828124701976776" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-          <classMoniker Id="94c766a3-a3ac-41c6-baf6-1c7f5d9f7fe8" LastKnownName="Телега" />
-          <nestedChildShapes>
-            <AttributeElementListCompartment Id="929706d5-a682-4336-abc9-281f22ad0386" absoluteBounds="2.515, 3.015, 1.2200000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-            <OperationElementListCompartment Id="67892935-2fdb-4e46-9234-636cd63eb59d" absoluteBounds="2.515, 3.546484357615312, 1.2200000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-          </nestedChildShapes>
-        </classShape>
-        <interfaceShape Id="a762f88f-7434-4878-87ea-d60e7e11a64c" absoluteBounds="2.125, 1, 2, 1.3828124701976776" hideQualifiedName="false" showFullSignature="true" increaseHeight="0" customColor="207, 223, 191">
-          <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический элемент" />
-          <nestedChildShapes>
-            <AttributeElementListCompartment Id="4a1afc89-b6d3-476f-84fd-b1435869e572" absoluteBounds="2.14, 1.3900000000000001, 1.9700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-            <OperationElementListCompartment Id="8aecb104-64a3-4326-978e-6fd1aaf335cd" absoluteBounds="2.14, 1.921484357615312, 1.9700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-          </nestedChildShapes>
-        </interfaceShape>
-        <classShape Id="c32a3253-cec7-4b45-977f-48af4cd6ac0c" absoluteBounds="3.875, 2.625, 1.25, 1.0624999801317854" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-          <classMoniker Id="b2fc7e85-f0c2-4813-84be-6cc72777bbbc" LastKnownName="Местность" />
-          <nestedChildShapes>
-            <AttributeElementListCompartment Id="300e28a1-ab4d-4c9e-8aa8-043396409618" absoluteBounds="3.8899999999999997, 3.015, 1.2200000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-            <OperationElementListCompartment Id="692bdbf9-a078-42c4-a34c-cc09d9089fe6" absoluteBounds="3.8899999999999997, 3.2261718675494193, 1.2200000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-          </nestedChildShapes>
-        </classShape>
-        <classShape Id="2f53078f-5a81-4473-8afc-5cd666d0e989" absoluteBounds="5.375, 1, 2.125, 1.5429687152306233" hideQualifiedName="false" showFullSignature="true" increaseHeight="0" customColor="181, 193, 223">
-          <classMoniker Id="15a5b238-12cb-405a-a7c7-1a95bcec9b1d" LastKnownName="Параметры" />
-          <nestedChildShapes>
-            <AttributeElementListCompartment Id="938b57ed-ac3c-4b7c-889c-8e7a7e30e348" absoluteBounds="5.39, 1.3900000000000001, 2.0949999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-            <OperationElementListCompartment Id="4b434b10-aa81-4573-bf4b-b871f56cfed0" absoluteBounds="5.39, 2.2417968476812042, 2.0949999999999998, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-          </nestedChildShapes>
-        </classShape>
-        <classShape Id="e792ed3d-b53b-40d4-ba57-00e7127183b4" absoluteBounds="0.625, 4.125, 3.375, 1.5429687152306242" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-          <classMoniker Id="9e91d6df-fd71-4d3a-982d-e343643662ef" LastKnownName="Фасад" />
-          <nestedChildShapes>
-            <AttributeElementListCompartment Id="5fa20723-6a70-4d0f-933d-6e38ae287170" absoluteBounds="0.64, 4.515, 3.3449999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-            <OperationElementListCompartment Id="a2f7a2da-18ad-4179-a770-90c95c11b860" absoluteBounds="0.64, 4.72617186754942, 3.3449999999999998, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-          </nestedChildShapes>
-        </classShape>
+        <AttributeElementListCompartment Id="14092878-8606-4dae-8088-c168d7a4262e" absoluteBounds="2.6399999999999997, 6.1400000000000006, 5.5950000000000006, 0.68164060264825821" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9303c465-64aa-457b-9d53-25db09b1cd42" absoluteBounds="2.6399999999999997, 6.8316406026482586, 5.5950000000000006, 0.68164060264825843" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
-    </packageShape>
-    <packageShape Id="0cdb9773-19bf-4207-a898-407bc4b1ec1c" absoluteBounds="8.75, 0.5, 2.75, 2.25" customColor="255, 249, 230" hideQualifiedName="false">
-      <packageMoniker Id="ee669045-bc0d-4500-8dba-71da6d1f76bb" LastKnownName="Интерфейс" />
-    </packageShape>
-    <realizationConnector edgePoints="[(1.5625 : 2.625); (1.5625 : 2.50569247019768); (3.125 : 2.50569247019768); (3.125 : 2.38281247019768)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+    </classShape>
+    <interfaceShape Id="a762f88f-7434-4878-87ea-d60e7e11a64c" absoluteBounds="0.5, 0.5, 2.25, 1.3828124701976776" hideQualifiedName="true" showFullSignature="true" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="ca8a0c3a-0608-4e6a-b72e-3fdc6b0e9a3c" LastKnownName="Графический объект" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="4a1afc89-b6d3-476f-84fd-b1435869e572" absoluteBounds="0.515, 0.89000000000000012, 2.2199999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="8aecb104-64a3-4326-978e-6fd1aaf335cd" absoluteBounds="0.515, 1.2613281125823654, 2.2199999999999998, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <realizationConnector edgePoints="[(5.4375 : 5.75); (5.4375 : 5.46859369536241); (1.61458333333333 : 5.46859369536241 : JumpStart); (1.44791666666667 : 5.46859369536241 : JumpEnd); (0.34 : 5.46859369536241); (0.34 : 2.12281247019768); (1.625 : 2.12281247019768); (1.625 : 1.88281247019768)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
       <interfaceRealizationMoniker Id="c2a28864-3e95-481c-897d-17aa5c468786" />
       <relativeChildShapes />
       <nodes>
@@ -60,15 +31,21 @@
         <interfaceShapeMoniker Id="a762f88f-7434-4878-87ea-d60e7e11a64c" />
       </nodes>
     </realizationConnector>
-    <realizationConnector edgePoints="[(3.125 : 2.625); (3.125 : 2.38281247019768)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
-      <interfaceRealizationMoniker Id="32701283-73fb-4572-ba3f-04c32d0b6691" />
-      <relativeChildShapes />
-      <nodes>
-        <classShapeMoniker Id="4ef5b8f5-6e68-4ada-a427-ec4eba224cc2" />
-        <interfaceShapeMoniker Id="a762f88f-7434-4878-87ea-d60e7e11a64c" />
-      </nodes>
-    </realizationConnector>
-    <realizationConnector edgePoints="[(4.5 : 2.625); (4.5 : 2.50569247019768); (3.125 : 2.50569247019768); (3.125 : 2.38281247019768)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+    <classShape Id="c32a3253-cec7-4b45-977f-48af4cd6ac0c" absoluteBounds="10.125, 0.875, 2.375, 2.0234374503294621" hideQualifiedName="true" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="b2fc7e85-f0c2-4813-84be-6cc72777bbbc" LastKnownName="Поверхность" />
+      <relativeChildShapes>
+        <lollipopShape Id="ade901b5-d03f-492e-ac98-b4cff2cc65d3" absoluteBounds="10.275, 0.60899654124677183, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+          <relativeChildShapes>
+            <lollipopLabelShape Id="11324b28-9abd-4f3e-bd0c-79ada5ad6c2b" absoluteBounds="10.44499999731779, 0.60899654124677216, 1.1275860071182251, 0.2060034589767456" qualifiedName="Движение телеги::Графические объекты::Графический объект" hideQualifiedName="true" />
+          </relativeChildShapes>
+        </lollipopShape>
+      </relativeChildShapes>
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="300e28a1-ab4d-4c9e-8aa8-043396409618" absoluteBounds="10.14, 1.2650000000000001, 2.3449999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="692bdbf9-a078-42c4-a34c-cc09d9089fe6" absoluteBounds="10.14, 2.1167968476812042, 2.3449999999999998, 0.681640602648258" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(11.3125 : 0.875); (11.3125 : 0.41808); (2.87288 : 0.41808); (2.87288 : 1.19140623509884); (2.75 : 1.19140623509884)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
       <interfaceRealizationMoniker Id="90835095-1669-42b5-8493-2d97b220b793" />
       <relativeChildShapes />
       <nodes>
@@ -76,5 +53,178 @@
         <interfaceShapeMoniker Id="a762f88f-7434-4878-87ea-d60e7e11a64c" />
       </nodes>
     </realizationConnector>
+    <classShape Id="2f53078f-5a81-4473-8afc-5cd666d0e989" absoluteBounds="3, 0.5, 2.125, 2.3437499403953557" hideQualifiedName="true" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="15a5b238-12cb-405a-a7c7-1a95bcec9b1d" LastKnownName="Параметры" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="938b57ed-ac3c-4b7c-889c-8e7a7e30e348" absoluteBounds="3.0149999999999997, 0.89000000000000057, 2.0949999999999998, 1.6425780728459358" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="4b434b10-aa81-4573-bf4b-b871f56cfed0" absoluteBounds="3.015, 2.5425780728459357, 2.0949999999999998, 0.20117186754941985" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45371bac-2f92-44dc-92e7-70f53fa4ef4e" absoluteBounds="5.375, 0.875, 4.5, 2.0234374503294621" hideQualifiedName="true" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="8d18afc7-5ef6-49ec-9e9c-0e7fc682e4bb" LastKnownName="Точка" />
+      <relativeChildShapes>
+        <lollipopShape Id="bf0a2f3d-ba4c-4032-9b52-ee0318486d0f" absoluteBounds="5.525, 0.60899654124677183, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+          <relativeChildShapes>
+            <lollipopLabelShape Id="ef72bc03-b59b-437a-8ba7-b224b4ebd95b" absoluteBounds="5.6949999973177912, 0.60899654124677172, 1.1275860071182251, 0.2060034589767456" qualifiedName="Движение телеги::Графические объекты::Графический объект" hideQualifiedName="true" />
+          </relativeChildShapes>
+        </lollipopShape>
+      </relativeChildShapes>
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="68a64a51-03c8-437d-88f6-b80a5609b692" absoluteBounds="5.39, 1.2650000000000006, 4.4700000000000006, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="db5ae7eb-6220-4835-8f3e-a0b26004f67a" absoluteBounds="5.39, 2.1167968476812042, 4.4700000000000006, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(7.625 : 0.875); (7.625 : 0.41808); (2.87288 : 0.41808); (2.87288 : 1.19140623509884); (2.75 : 1.19140623509884)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="f2931bae-4480-49ad-a9fb-e68ca155463b" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="45371bac-2f92-44dc-92e7-70f53fa4ef4e" />
+        <interfaceShapeMoniker Id="a762f88f-7434-4878-87ea-d60e7e11a64c" />
+      </nodes>
+    </realizationConnector>
+    <classShape Id="560397ab-fe2b-4274-93c0-d613fecc2c50" absoluteBounds="7.625, 3.625, 2.125, 1.8632812052965155" hideQualifiedName="true" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="069283a8-f36c-4a63-8c57-0c65723cc061" LastKnownName="Линия" />
+      <relativeChildShapes>
+        <lollipopShape Id="be51a087-4fc6-425e-9abd-dd2d1e40b9ae" absoluteBounds="6.4374139931052925, 3.7750000000000004, 1.1875860068947077, 0.125" collapsed="false">
+          <relativeChildShapes>
+            <lollipopLabelShape Id="4702490e-9650-4344-93ba-685539ccf80c" absoluteBounds="6.4374139931052925, 3.9449999973177912, 1.1275860071182251, 0.2060034589767456" qualifiedName="Движение телеги::Графические объекты::Графический объект" hideQualifiedName="true" />
+          </relativeChildShapes>
+        </lollipopShape>
+      </relativeChildShapes>
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="25ccf9d1-9d87-40d3-9998-39f3f2a131b0" absoluteBounds="7.6400000000000006, 4.015, 2.0949999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="fe74c4ec-da42-43b0-998d-946e4c49ca75" absoluteBounds="7.6400000000000006, 4.8667968476812042, 2.0949999999999998, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(8.6875 : 3.625); (8.6875 : 3.09374994039536); (7.70833333333333 : 3.09374994039536 : JumpStart); (7.54166666666667 : 3.09374994039536 : JumpEnd); (2.75 : 3.09374994039536); (2.75 : 2.875); (2.45833333333333 : 2.875 : JumpStart); (2.29166666666667 : 2.875 : JumpEnd); (1.625 : 2.875); (1.625 : 1.88281247019768)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="0dad4360-04d1-406f-b430-92570e606d77" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="560397ab-fe2b-4274-93c0-d613fecc2c50" />
+        <interfaceShapeMoniker Id="a762f88f-7434-4878-87ea-d60e7e11a64c" />
+      </nodes>
+    </realizationConnector>
+    <associationConnector edgePoints="[(8.7964001949419 : 3.625); (8.7964001949419 : 2.89843745032946)]" fixedFrom="Caller" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="2">
+      <associationMoniker Id="6ed84442-1676-4374-865e-8ac6a6a2b8f6" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="560397ab-fe2b-4274-93c0-d613fecc2c50" />
+        <classShapeMoniker Id="45371bac-2f92-44dc-92e7-70f53fa4ef4e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="61c02f3f-3220-49d7-b2ac-b1de3cbadbc0" absoluteBounds="4.625, 3.75, 1.625, 1.5429687152306233" hideQualifiedName="true" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="71529df5-a101-459f-9918-11a67d970907" LastKnownName="Квадрат" />
+      <relativeChildShapes>
+        <lollipopShape Id="fefaeda4-e4e4-4c33-8ce9-be69f633a558" absoluteBounds="6.25, 4.2198547337906236, 1.1875860068947077, 0.125" collapsed="false" position="Right">
+          <relativeChildShapes>
+            <lollipopLabelShape Id="359cd722-fbf2-4f6b-8bca-fe606543ddf6" absoluteBounds="6.3, 4.3898547311084144, 1.1275860071182251, 0.2060034589767456" qualifiedName="Движение телеги::Графические объекты::Графический объект" hideQualifiedName="true" />
+          </relativeChildShapes>
+        </lollipopShape>
+      </relativeChildShapes>
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e3f218fd-ecc7-4388-aec6-9f9943e9db06" absoluteBounds="4.64, 4.14, 1.5950000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="cb0d0807-4d47-4143-aff0-e102037f8c5b" absoluteBounds="4.64, 4.671484357615312, 1.5950000000000002, 0.52148435761531176" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(5.4375 : 3.75); (5.4375 : 3.09374994039536); (2.75 : 3.09374994039536); (2.75 : 2.875); (2.45833333333333 : 2.875 : JumpStart); (2.29166666666667 : 2.875 : JumpEnd); (1.625 : 2.875); (1.625 : 1.88281247019768)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="d27d7abb-8be8-4ea6-9ae0-3fadb96b75aa" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="61c02f3f-3220-49d7-b2ac-b1de3cbadbc0" />
+        <interfaceShapeMoniker Id="a762f88f-7434-4878-87ea-d60e7e11a64c" />
+      </nodes>
+    </realizationConnector>
+    <associationConnector edgePoints="[(6.25 : 5.03164262481569); (7.625 : 5.03164262481569)]" fixedFrom="Caller" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="4">
+      <associationMoniker Id="897cfa79-b3c8-4543-ba33-4b360c620a03" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="61c02f3f-3220-49d7-b2ac-b1de3cbadbc0" />
+        <classShapeMoniker Id="560397ab-fe2b-4274-93c0-d613fecc2c50" />
+      </nodes>
+    </associationConnector>
+    <generalizationConnector edgePoints="[(5.4375 : 3.75); (5.4375 : 3.27343745032946); (7.625 : 3.27343745032946); (7.625 : 2.89843745032946)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="a1c8eadc-3276-4164-86da-3ba64a66ddb4" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="61c02f3f-3220-49d7-b2ac-b1de3cbadbc0" />
+        <classShapeMoniker Id="45371bac-2f92-44dc-92e7-70f53fa4ef4e" />
+      </nodes>
+    </generalizationConnector>
+    <generalizationConnector edgePoints="[(5.4375 : 5.75); (5.4375 : 5.29296871523062)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="a9cd17f2-a560-470a-b4c2-d3775d11db48" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="a773a416-b173-4d20-bf08-f6aab23fc6ea" />
+        <classShapeMoniker Id="61c02f3f-3220-49d7-b2ac-b1de3cbadbc0" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="69efbbc4-4c8d-4ed3-a86b-85b8e65c5eda" absoluteBounds="10, 4, 2.5, 3.9453123907248173" hideQualifiedName="true" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="b0b51b29-c015-4c67-8c8c-eced4ec3d59f" LastKnownName="Область построения" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="228dd405-3f9a-4915-9ff5-363e830f71b8" absoluteBounds="10.015, 4.39, 2.4699999999999998, 2.4433592980106669" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="c7e3f515-9fbd-40cf-89c7-0b7efb9a6a3f" absoluteBounds="10.015, 6.8433592980106663, 2.4699999999999998, 1.0019530927141509" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10 : 6.68164060264826); (8.25 : 6.68164060264826)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="2">
+      <associationMoniker Id="a0ec6434-c2d6-4e48-9af9-d368540a3317" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="69efbbc4-4c8d-4ed3-a86b-85b8e65c5eda" />
+        <classShapeMoniker Id="a773a416-b173-4d20-bf08-f6aab23fc6ea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.28125 : 4); (12.28125 : 2.89843745032946)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="2cdce586-48c4-4058-bb85-4a801abc68b2" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="69efbbc4-4c8d-4ed3-a86b-85b8e65c5eda" />
+        <classShapeMoniker Id="c32a3253-cec7-4b45-977f-48af4cd6ac0c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d0df1588-ed91-442e-bee7-634b5210b39b" absoluteBounds="0.5, 3.125, 3.75, 2.1835936953624078" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="0c2c46aa-d2ee-4e5d-a014-7b5f7071cc17" LastKnownName="Телега" />
+      <relativeChildShapes>
+        <lollipopShape Id="cf6c1e2e-745c-4057-9de1-6b74dceaea33" absoluteBounds="0.65000000000000036, 2.8589965412467717, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+          <relativeChildShapes>
+            <lollipopLabelShape Id="2ff5b8eb-7f82-41ed-b389-96a1e5569e98" absoluteBounds="0.819999997317792, 2.8589965412467717, 1.1275860071182251, 0.2060034589767456" qualifiedName="Движение телеги::Графические объекты::Графический объект" hideQualifiedName="true" />
+          </relativeChildShapes>
+        </lollipopShape>
+      </relativeChildShapes>
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="2dfe755a-5776-4ca4-a9c2-08f306964589" absoluteBounds="0.515, 3.515, 3.7199999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9d7cf474-0be7-4e1b-a418-8ca6b44b45b4" absoluteBounds="0.515, 4.3667968476812042, 3.7199999999999998, 0.84179684768120455" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(2.375 : 3.125); (2.375 : 2.25781247019768); (1.625 : 2.25781247019768); (1.625 : 1.88281247019768)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="d140ea28-aa9b-4e8b-a011-768d9f31535f" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="d0df1588-ed91-442e-bee7-634b5210b39b" />
+        <interfaceShapeMoniker Id="a762f88f-7434-4878-87ea-d60e7e11a64c" />
+      </nodes>
+    </realizationConnector>
+    <associationConnector edgePoints="[(10 : 7.81054679801067); (1.53125 : 7.81054679801067); (1.53125 : 5.30859369536241)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="baf63056-c7d8-4543-80c7-3334d43140af" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="69efbbc4-4c8d-4ed3-a86b-85b8e65c5eda" />
+        <classShapeMoniker Id="d0df1588-ed91-442e-bee7-634b5210b39b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4fe76662-7e92-4f7a-a0cb-a840266f4d61" isExpanded="false" absoluteBounds="10.5, 3.125, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="ff0eb9c3-8972-441f-b722-efe5e5099d24" LastKnownName="Panel" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="4bd564f1-dfe2-45af-81ea-83af59adee9b" absoluteBounds="10.515, 3.5149999999999997, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="4a63f151-11d6-4924-9c00-767d9e8e2c83" absoluteBounds="10.515, 3.7261718675494198, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(11.25 : 4); (11.25 : 3.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="a6f91850-26ce-44ff-9de5-d8aa9971b86f" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="69efbbc4-4c8d-4ed3-a86b-85b8e65c5eda" />
+        <classShapeMoniker Id="4fe76662-7e92-4f7a-a0cb-a840266f4d61" />
+      </nodes>
+    </generalizationConnector>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

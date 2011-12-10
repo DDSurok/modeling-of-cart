@@ -36,21 +36,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Validate Include="Слои.layerdiagram">
-      <SubType>Content</SubType>
-    </Validate>
-    <Validate Include="Слои.layerdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Слои.layerdiagram</DependentUpon>
-    </Validate>
-    <Validate Include="Слои.layerdiagram.suppressions">
-      <SubType>Content</SubType>
-      <DependentUpon>Слои.layerdiagram</DependentUpon>
-    </Validate>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Телега\Телега.csproj">
-      <Name>Телега</Name>
+    <ProjectReference Include="..\Телега\Телега%28ООП%29.csproj">
+      <Name>Телега(ООП)</Name>
       <Project>{769d4e95-497f-4809-a61d-2c0e84ad787f}</Project>
     </ProjectReference>
   </ItemGroup>

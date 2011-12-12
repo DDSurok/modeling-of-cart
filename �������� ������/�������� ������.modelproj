@@ -35,10 +35,4 @@
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Телега\Телега%28ООП%29.csproj">
-      <Name>Телега(ООП)</Name>
-      <Project>{769d4e95-497f-4809-a61d-2c0e84ad787f}</Project>
-    </ProjectReference>
-  </ItemGroup>
 </Project>

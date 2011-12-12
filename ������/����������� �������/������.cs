@@ -8,12 +8,22 @@ namespace Телега.Графические_объекты
         public Color Цвет { get; set; }
         private Точка Левая_ось, Правая_ось;
         public Область_построения Родитель;
+        /// <summary>
+        /// Создает экземпляр телеги
+        /// </summary>
+        /// <param name="родитель">Панель для доступа к ее высоте панели, поверхности и параметрам поворота</param>
+        /// <param name="левая_ось">левая нижняя точка</param>
+        /// <param name="правая_ось">правая нижняя точка</param>
+        /// <param name="цвет">Цвет телеги</param>
         public Телега(Область_построения родитель, Точка левая_ось, Точка правая_ось, Color цвет)
         {
             this.Цвет = цвет;
             this.Родитель = родитель;
             this.Обновить_положение(левая_ось, правая_ось);
         }
+        /// <summary>
+        /// Обновить значения нижних точек
+        /// </summary>
         public void Обновить_положение(Точка левая_ось, Точка правая_ось)
         {
             this.Левая_ось = левая_ось;
@@ -23,7 +33,10 @@ namespace Телега.Графические_объекты
         {
             throw new Exception("Не используется");
         }
-
+        /// <summary>
+        /// Отрисовывает телегу на поверхности рисования gr
+        /// </summary>
+        /// <param name="gr">Поверхность рисования</param>
         public void Нарисовать(ref Graphics gr)
         {
             Pen pen = new Pen(this.Цвет);
@@ -38,7 +51,9 @@ namespace Телега.Графические_объекты
             gr.DrawLine(pen, new Point((int)x2v, (int)(this.Родитель.Height - y2v)), new Point((int)x2, (int)(this.Родитель.Height - y2)));
             gr.DrawLine(pen, new Point((int)x1v, (int)(this.Родитель.Height - y1v)), new Point((int)x2v, (int)(this.Родитель.Height - y2v)));
         }
-
+        /// <summary>
+        /// Расчет координат верхних точек телеги
+        /// </summary>
         private void Расчет_вершин(out double x1v, out double y1v, out double x2v, out double y2v)
         {
             double x1 = this.Левая_ось.X,
